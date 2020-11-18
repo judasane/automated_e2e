@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.2
+    - name: Katalon Studio Github Action
+      uses: katalon-studio/katalon-studio-github-action@v2
+      with:
+          version: '7.5.5'
+          projectPath: '${{ github.workspace }}'
+          args: 'katalonc -noSplash -runMode=console -projectPath="C:\Users\User\git\automated-e2e\automated-e2e.prj" -retry=0 -testSuiteCollectionPath="Test Suites/OMR-tests" -apiKey=${{ secrets.API_KEY }} --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true'
