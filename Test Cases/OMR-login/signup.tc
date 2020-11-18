@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Signup flow in the current OMR</description>
+   <name>signup</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ec08aff1-abb3-49d7-9761-d6d62e0cea18</testCaseGuid>
+   <variable>
+      <defaultValue>'tykiblood1992+e2e2@gmail.com'</defaultValue>
+      <description></description>
+      <id>bceb2527-2534-4ecd-b176-371edf867f79</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+</TestCaseEntity>
