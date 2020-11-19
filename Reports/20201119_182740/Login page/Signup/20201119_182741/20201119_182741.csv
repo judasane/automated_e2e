@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Signup,Chrome 86.0.4240.198,,,2020-11-19 18:27:46,2020-11-19 18:28:02,"15,183s",PASSED
+,,,,,,,
+Test Cases/OMR-login/signup,Chrome 86.0.4240.198,Signup flow in the current OMR,,2020-11-19 18:27:47,2020-11-19 18:28:02,"15,018s",PASSED
+"openBrowser("""")",Chrome 86.0.4240.198,,,2020-11-19 18:27:47,2020-11-19 18:27:51,"4,338s",PASSED
+navigateToUrl(url),Chrome 86.0.4240.198,,,2020-11-19 18:27:51,2020-11-19 18:27:56,"5,197s",PASSED
+"click(findTestObject(""Object Repository/Login page/Page_On My Radar/input_Email_email""))",Chrome 86.0.4240.198,,,2020-11-19 18:27:56,2020-11-19 18:27:57,"1,068s",PASSED
+"click(findTestObject(""Object Repository/Login page/Page_On My Radar/span_Signup""))",Chrome 86.0.4240.198,,,2020-11-19 18:27:57,2020-11-19 18:27:58,"0,500s",PASSED
+"setText(findTestObject(""Object Repository/Login page/Page_On My Radar/input_Email_email""), email + ""+"" + RandomStringUtils.randomAscii(4) + ""@gmail.com"")",Chrome 86.0.4240.198,,,2020-11-19 18:27:58,2020-11-19 18:27:59,"0,791s",PASSED
+"setText(findTestObject(""Object Repository/Login page/Page_On My Radar/input_Name_displayName""), ""test"")",Chrome 86.0.4240.198,,,2020-11-19 18:27:59,2020-11-19 18:27:59,"0,536s",PASSED
+"click(findTestObject(""Object Repository/Login page/Page_On My Radar/div_Password_css-1e2ir0d""))",Chrome 86.0.4240.198,,,2020-11-19 18:27:59,2020-11-19 18:27:59,"0,275s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login page/Page_On My Radar/input_Password_password""), ""o+tS4OuGt32s9ezZj287yw=="")",Chrome 86.0.4240.198,,,2020-11-19 18:27:59,2020-11-19 18:28:00,"0,337s",PASSED
+"click(findTestObject(""Object Repository/Page_On My Radar/span_Signup_1""))",Chrome 86.0.4240.198,,,2020-11-19 18:28:00,2020-11-19 18:28:00,"0,286s",PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Login page/Page_On My Radar/button_Logout""), 0)",Chrome 86.0.4240.198,,,2020-11-19 18:28:00,2020-11-19 18:28:01,"0,865s",PASSED
+closeBrowser(),Chrome 86.0.4240.198,,,2020-11-19 18:28:01,2020-11-19 18:28:02,"0,588s",PASSED

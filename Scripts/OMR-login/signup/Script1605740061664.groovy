@@ -19,13 +19,13 @@ import org.apache.commons.lang.RandomStringUtils as RandStr
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://web-portal-app-development.herokuapp.com/login')
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.click(findTestObject('Object Repository/Login page/Page_On My Radar/input_Email_email'))
 
 WebUI.click(findTestObject('Object Repository/Login page/Page_On My Radar/span_Signup'))
 
-WebUI.setText(findTestObject('Object Repository/Login page/Page_On My Radar/input_Email_email'), ((email + '+') + RandStr.randomAscii(
+WebUI.setText(findTestObject('Object Repository/Login page/Page_On My Radar/input_Email_email'), ((GlobalVariable.email + '+') + RandStr.randomAscii(
         4)) + '@gmail.com')
 
 WebUI.setText(findTestObject('Object Repository/Login page/Page_On My Radar/input_Name_displayName'), 'test')
