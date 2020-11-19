@@ -16,11 +16,5 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/OMR-login/signup</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>bbaac7ec-1b8a-4c00-a65e-4e0c227825f6</variableId>
-      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
