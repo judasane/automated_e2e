@@ -14,6 +14,6 @@ jobs:
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@v2
       with:
-          version: '7.5.5'
+          version: '7.7.5'
           projectPath: '${{ github.workspace }}'
           args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/OMR-tests" -apiKey=${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true'
