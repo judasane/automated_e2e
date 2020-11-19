@@ -20,7 +20,7 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>bceb2527-2534-4ecd-b176-371edf867f79</variableId>
+         <variableId>bbaac7ec-1b8a-4c00-a65e-4e0c227825f6</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

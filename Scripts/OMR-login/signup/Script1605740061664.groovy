@@ -15,6 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.apache.commons.lang.RandomStringUtils as RandStr
 
 WebUI.openBrowser('')
 
@@ -24,7 +25,8 @@ WebUI.click(findTestObject('Object Repository/Login page/Page_On My Radar/input_
 
 WebUI.click(findTestObject('Object Repository/Login page/Page_On My Radar/span_Signup'))
 
-WebUI.setText(findTestObject('Object Repository/Login page/Page_On My Radar/input_Email_email'), email)
+WebUI.setText(findTestObject('Object Repository/Login page/Page_On My Radar/input_Email_email'), ((email + '+') + RandStr.randomAscii(
+        4)) + '@gmail.com')
 
 WebUI.setText(findTestObject('Object Repository/Login page/Page_On My Radar/input_Name_displayName'), 'test')
 
