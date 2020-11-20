@@ -3,11 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       enviroment:
-        description: 'enviroment'
+        description: 'Choosed enviroment'
         required: true
         default: 'development'
-      tags:
-        description: 'Choosed enviroment'
 jobs:
   build:
     runs-on: windows-latest
