@@ -1,4 +1,4 @@
-name: CI
+name: Staging test on Katalon push
 on:
   push:
     branches: [ staging ]

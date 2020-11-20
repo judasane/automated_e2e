@@ -1,4 +1,4 @@
-name: CI
+name: Production test on Katalon on Push
 on:
   push:
     branches: [ master ]
