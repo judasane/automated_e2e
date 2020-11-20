@@ -1,4 +1,4 @@
-name: CI
+name: Development Katalon on Push
 on:
   push:
     branches: [ development ]
