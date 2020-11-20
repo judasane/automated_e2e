@@ -1,12 +1,13 @@
 name: CI
 on:
   workflow_dispatch:
-    enviroment:
-      description: 'enviroment'
-      required: true
-      default: 'development'
-    tags:
-      description: 'Choosed enviroment'
+    inputs:
+      enviroment:
+        description: 'enviroment'
+        required: true
+        default: 'development'
+      tags:
+        description: 'Choosed enviroment'
 jobs:
   build:
     runs-on: windows-latest
