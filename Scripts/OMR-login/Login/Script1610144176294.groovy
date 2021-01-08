@@ -15,28 +15,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.apache.commons.lang.RandomStringUtils as RandStr
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.click(findTestObject('Object Repository/Login page/Page_On My Radar/input_Email_email'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Sign In with Auth0/img_Protected with_auth0-lock-header-logo'), 
+    0)
 
-WebUI.click(findTestObject('Object Repository/Login page/Page_On My Radar/span_Signup'))
+WebUI.setText(findTestObject('Object Repository/Page_Sign In with Auth0/input_Log In_email'), GlobalVariable.email)
 
-WebUI.setText(findTestObject('Object Repository/Login page/Page_On My Radar/input_Email_email'), ((GlobalVariable.email + '+') + RandStr.randomAscii(
-        4)) + '@gmail.com')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign In with Auth0/input_Log In_password'), GlobalVariable.encryptedPassword)
 
-WebUI.setText(findTestObject('Object Repository/Login page/Page_On My Radar/input_Name_displayName'), 'test')
+WebUI.sendKeys(findTestObject('Object Repository/Page_Sign In with Auth0/input_Log In_password'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Login page/Page_On My Radar/div_Password_css-1e2ir0d'))
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Login page/Page_On My Radar/input_Password_password'), 'o+tS4OuGt32s9ezZj287yw==')
-
-WebUI.click(findTestObject('Object Repository/Page_On My Radar/span_Signup_1'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Login page/Page_On My Radar/button_Logout'), 0)
-
-WebUI.closeBrowser()
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_On My Radar/div_To start your experience'), 0)
 

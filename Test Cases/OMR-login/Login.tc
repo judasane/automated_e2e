@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Login with auth0</description>
+   <name>Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>90fbfec6-ef70-48b2-b2c2-244391556517</testCaseGuid>
+</TestCaseEntity>

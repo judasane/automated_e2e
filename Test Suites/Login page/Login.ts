@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Signup</name>
+   <name>Login</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -12,9 +12,9 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>85c3941f-83ef-4ca9-94b2-98abd9aebd0d</testSuiteGuid>
    <testCaseLink>
-      <guid>8a948349-e644-43e0-bd7f-6b4797143c55</guid>
+      <guid>e193994a-6d15-4084-bc44-0d8fbd9c371f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/OMR-login/signup</testCaseId>
+      <testCaseId>Test Cases/OMR-login/Login</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

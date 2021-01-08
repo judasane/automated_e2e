@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login,Chrome 87.0.4280.88,,,2021-01-08 18:16:09,2021-01-08 18:16:25,"16,374s",FAILED
+,,,,,,,
+Test Cases/OMR-login/Login,Chrome 87.0.4280.88,Login with auth0,,2021-01-08 18:16:09,2021-01-08 18:16:25,"16,224s",FAILED
+"openBrowser("""")",Chrome 87.0.4280.88,,,2021-01-08 18:16:09,2021-01-08 18:16:13,"3,852s",PASSED
+navigateToUrl(url),Chrome 87.0.4280.88,,,2021-01-08 18:16:13,2021-01-08 18:16:18,"5,185s",PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Page_Sign In with Auth0/img_Protected with_auth0-lock-header-logo""), 0)",Chrome 87.0.4280.88,,,2021-01-08 18:16:18,2021-01-08 18:16:21,"2,471s",PASSED
+"setText(findTestObject(""Object Repository/Page_Sign In with Auth0/input_Log In_email""), email)",Chrome 87.0.4280.88,,,2021-01-08 18:16:21,2021-01-08 18:16:21,"0,921s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Sign In with Auth0/input_Log In_password""), encryptedPassword)",Chrome 87.0.4280.88,,,2021-01-08 18:16:21,2021-01-08 18:16:22,"0,377s",PASSED
+"sendKeys(findTestObject(""Object Repository/Page_Sign In with Auth0/input_Log In_password""), Keys.chord(ENTER))",Chrome 87.0.4280.88,,,2021-01-08 18:16:22,2021-01-08 18:16:22,"0,379s",PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Page_On My Radar/div_To start your experience""), 0)",Chrome 87.0.4280.88,,,2021-01-08 18:16:22,2021-01-08 18:16:25,"2,863s",FAILED
