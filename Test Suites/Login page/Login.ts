@@ -17,4 +17,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/OMR-login/Login</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>308915a7-6713-41ba-948d-d167082881fb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OMR-login/Login with contacts</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

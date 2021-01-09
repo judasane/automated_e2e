@@ -23,11 +23,11 @@ WebUI.navigateToUrl(GlobalVariable.url)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Sign In with Auth0/img_Protected with_auth0-lock-header-logo'), 
     0)
 
-WebUI.setText(findTestObject('Object Repository/Page_Sign In with Auth0/input_Log In_email'), GlobalVariable.email_empty)
+WebUI.setText(findTestObject('Object Repository/Page_Sign In with Auth0/input_Log In_email'), GlobalVariable.email_contacts)
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign In with Auth0/input_Log In_password'), GlobalVariable.encryptedPassword)
 
 WebUI.sendKeys(findTestObject('Object Repository/Page_Sign In with Auth0/input_Log In_password'), Keys.chord(Keys.ENTER))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_On My Radar/div_To start your experience'), 0)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_On My Radar/h1_Contacts'), 0)
 

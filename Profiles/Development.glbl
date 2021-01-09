@@ -11,12 +11,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'e2e.test@onmyradar.com'</initValue>
-      <name>email</name>
+      <initValue>'e2e.test.empty@onmyradar.com'</initValue>
+      <name>email_empty</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'tnM9pyQGa2UJlSvG75G1pA=='</initValue>
       <name>encryptedPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test@onmyradar.com'</initValue>
+      <name>email_contacts</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
