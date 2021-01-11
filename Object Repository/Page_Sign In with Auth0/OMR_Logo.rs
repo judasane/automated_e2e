@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_DashboardConnectionsRadarBacklogSetting_cba480</name>
+   <name>OMR_Logo</name>
    <tag></tag>
-   <elementGuidId>5f304041-5073-43fc-ab80-b26af856c9ab</elementGuidId>
+   <elementGuidId>e747c593-1033-4ce4-b9d7-25940dab353a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>div.css-1hpn4bw</value>
+         <value>img.auth0-lock-header-logo</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app-root']/div[2]/div/div/div/div[2]/div[2]/div/div[2]/div/div</value>
+         <value>//div[@id='auth0-lock-container-1']/div/div[2]/form/div/div/div/div/div/div[2]/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,55 +21,48 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>img</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>css-1hpn4bw</value>
+      <value>auth0-lock-header-logo</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>src</name>
       <type>Main</type>
-      <value>DashboardConnectionsRadarBacklogSettingsNew versionLogoutShortcutsTeam space</value>
+      <value>https://web-portal-app-development.herokuapp.com/static/media/logo.6aec39bf.png</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app-root&quot;)/div[2]/div[@class=&quot;css-a1uz4q-LayoutContainer&quot;]/div[@class=&quot;css-58k9v9-NavigationContainer&quot;]/div[@class=&quot;css-1qjvlxm-ContainerNavigationMask&quot;]/div[@class=&quot;css-1yxtf1y-ContentNavigationWrapper&quot;]/div[@class=&quot;css-1y540l9-ContainerNavigationPrimitiveBase&quot;]/div[@class=&quot;css-9uaqau-ScrollProvider&quot;]/div[@class=&quot;css-hwlzh1-ScrollableTransitionGroup&quot;]/div[@class=&quot;css-xdwmn0&quot;]/div[@class=&quot;css-1hpn4bw&quot;]</value>
+      <value>id(&quot;auth0-lock-container-1&quot;)/div[@class=&quot;auth0-lock auth0-lock-opened auth0-lock-with-tabs&quot;]/div[@class=&quot;auth0-lock-center&quot;]/form[@class=&quot;auth0-lock-widget&quot;]/div[@class=&quot;auth0-lock-widget-container&quot;]/div[@class=&quot;auth0-lock-cred-pane auth0-lock-quiet&quot;]/div[@class=&quot;auth0-lock-cred-pane-internal-wrapper&quot;]/div[@class=&quot;auth0-lock-content-wrapper&quot;]/div[@class=&quot;auth0-lock-header&quot;]/div[@class=&quot;auth0-lock-header-welcome&quot;]/img[@class=&quot;auth0-lock-header-logo&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app-root']/div[2]/div/div/div/div[2]/div[2]/div/div[2]/div/div</value>
+      <value>//div[@id='auth0-lock-container-1']/div/div[2]/form/div/div/div/div/div/div[2]/img</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:img</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Container description'])[1]/following::div[3]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Container name'])[1]/following::div[4]</value>
+      <value>//img[contains(@src,'https://web-portal-app-development.herokuapp.com/static/media/logo.6aec39bf.png')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div[2]/div/div[2]/div/div</value>
+      <value>//img</value>
    </webElementXpaths>
 </WebElementEntity>

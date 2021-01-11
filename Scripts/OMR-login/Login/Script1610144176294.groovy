@@ -20,14 +20,14 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Sign In with Auth0/img_Protected with_auth0-lock-header-logo'), 
+WebUI.waitForElementPresent(findTestObject('Page_Sign In with Auth0/OMR_Logo'), 
     0)
 
-WebUI.setText(findTestObject('Object Repository/Page_Sign In with Auth0/input_Log In_email'), GlobalVariable.email_empty)
+WebUI.setText(findTestObject('Page_Sign In with Auth0/Log_In_Email'), GlobalVariable.email_empty)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign In with Auth0/input_Log In_password'), GlobalVariable.encryptedPassword)
+WebUI.setEncryptedText(findTestObject('Page_Sign In with Auth0/Log_In_Passwrod'), GlobalVariable.encryptedPassword)
 
-WebUI.sendKeys(findTestObject('Object Repository/Page_Sign In with Auth0/input_Log In_password'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_Sign In with Auth0/Log_In_Passwrod'), Keys.chord(Keys.ENTER))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_On My Radar/div_To start your experience'), 0)
+WebUI.waitForElementPresent(findTestObject('Page_On My Radar/start_your_experience_message'), 0)
 

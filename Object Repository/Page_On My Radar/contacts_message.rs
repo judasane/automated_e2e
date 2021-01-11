@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>h1_Login</name>
+   <name>contacts_message</name>
    <tag></tag>
-   <elementGuidId>09dd3c6c-0fa0-4ac5-9585-3d9198fc6a00</elementGuidId>
+   <elementGuidId>09b582c9-2b1b-487a-a30e-4c47a5b5049e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>h1</value>
+         <value>h1.mr_20</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app-root']/div[2]/div/div[2]/div/div/div/div/h1</value>
+         <value>//div[@id='app-root']/div[2]/div[2]/section[2]/div/div/h1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,46 +24,60 @@
       <value>h1</value>
    </webElementProperties>
    <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mr_20</value>
+   </webElementProperties>
+   <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value> Login </value>
+      <value>Contacts</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app-root&quot;)/div[2]/div[@class=&quot;css-a1uz4q-LayoutContainer&quot;]/div[@class=&quot;css-8urrve-PageWrapper&quot;]/div[1]/div[1]/div[1]/div[1]/h1[1]</value>
+      <value>id(&quot;app-root&quot;)/div[2]/div[@class=&quot;container container_table-view px_0&quot;]/section[@class=&quot;il-table-view p_32&quot;]/div[@class=&quot;il-table-view_header mb_36&quot;]/div[@class=&quot;il-table-view_header-title&quot;]/h1[@class=&quot;mr_20&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app-root']/div[2]/div/div[2]/div/div/div/div/h1</value>
+      <value>//div[@id='app-root']/div[2]/div[2]/section[2]/div/div/h1</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Team space'])[1]/following::h1[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sort by'])[1]/following::h1[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Shortcuts'])[1]/following::h1[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[1]/following::h1[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Login']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sync Google account'])[1]/preceding::h1[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sync Microsoft account'])[1]/preceding::h1[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
