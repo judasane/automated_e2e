@@ -6,12 +6,22 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://web-portal-app-development.herokuapp.com/login'</initValue>
+      <initValue>'https://web-portal-app-development.herokuapp.com/'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'tykiblood'</initValue>
-      <name>email</name>
+      <initValue>'e2e.test.empty@onmyradar.com'</initValue>
+      <name>email_empty</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'tnM9pyQGa2UJlSvG75G1pA=='</initValue>
+      <name>encryptedPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test@onmyradar.com'</initValue>
+      <name>email_contacts</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
