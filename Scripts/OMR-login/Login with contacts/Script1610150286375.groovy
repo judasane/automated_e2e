@@ -25,9 +25,9 @@ WebUI.waitForElementPresent(findTestObject('Page_Auth0_SignIn/OMR_Logo'),
 
 WebUI.setText(findTestObject('Page_Auth0_SignIn/Log_In_Email'), GlobalVariable.email_contacts)
 
-WebUI.setEncryptedText(findTestObject('Page_Auth0_SignIn/Log_In_Passwrod'), GlobalVariable.encryptedPassword)
+WebUI.setEncryptedText(findTestObject('Page_Auth0_SignIn/Log_In_Password'), GlobalVariable.encryptedPassword)
 
-WebUI.sendKeys(findTestObject('Page_Auth0_SignIn/Log_In_Passwrod'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_Auth0_SignIn/Log_In_Password'), Keys.chord(Keys.ENTER))
 
 WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/contacts_message'), 0)
 
