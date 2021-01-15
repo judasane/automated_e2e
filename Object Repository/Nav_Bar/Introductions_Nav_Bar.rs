@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Test_Intro_User_Row</name>
+   <name>Introductions_Nav_Bar</name>
    <tag></tag>
-   <elementGuidId>97c086ee-e6cb-4da0-8ff7-5956e9de7e40</elementGuidId>
+   <elementGuidId>96582319-7ba9-49a9-aad9-e5bc7dd05e6b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[.='0. Test Intro1']//ancestor::div[2]</value>
+         <value>//nav[@class=&quot;mdl-navigation&quot;]/a[3]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

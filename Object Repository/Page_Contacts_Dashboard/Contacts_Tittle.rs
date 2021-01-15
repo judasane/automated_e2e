@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Test_Intro_User_Row</name>
+   <name>Contacts_Tittle</name>
    <tag></tag>
-   <elementGuidId>97c086ee-e6cb-4da0-8ff7-5956e9de7e40</elementGuidId>
+   <elementGuidId>eec2b8f9-b4d7-49c1-af2b-6728fbad14a2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[.='0. Test Intro1']//ancestor::div[2]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//h1[@class=&quot;mr_20&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

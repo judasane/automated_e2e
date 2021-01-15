@@ -34,4 +34,9 @@
       <initValue>'e2e.test.introduction.list@onmyradar.com'</initValue>
       <name>email_introduction_list</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.create.introduction@onmyradar.com'</initValue>
+      <name>email_create_introduction</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

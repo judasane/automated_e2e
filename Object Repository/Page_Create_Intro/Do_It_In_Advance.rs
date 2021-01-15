@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Test_Intro_User_Row</name>
+   <name>Do_It_In_Advance</name>
    <tag></tag>
-   <elementGuidId>97c086ee-e6cb-4da0-8ff7-5956e9de7e40</elementGuidId>
+   <elementGuidId>27e7c8cf-67e5-4499-a7af-58d4ce3dd50e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[.='0. Test Intro1']//ancestor::div[2]</value>
+         <value>//input[@id=&quot;doit_in_advanca&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

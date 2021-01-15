@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Test_Intro_User_Row</name>
+   <name>Intro_Sent_Span</name>
    <tag></tag>
-   <elementGuidId>97c086ee-e6cb-4da0-8ff7-5956e9de7e40</elementGuidId>
+   <elementGuidId>0b737472-4457-4ce8-8b09-6ed2fa33777c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[.='0. Test Intro1']//ancestor::div[2]</value>
+         <value>//span[@class=&quot;ic-intro-for_box-with-number_title--success&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

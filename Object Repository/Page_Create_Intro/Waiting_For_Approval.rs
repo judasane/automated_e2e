@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Test_Intro_User_Row</name>
+   <name>Waiting_For_Approval</name>
    <tag></tag>
-   <elementGuidId>97c086ee-e6cb-4da0-8ff7-5956e9de7e40</elementGuidId>
+   <elementGuidId>2be28206-5f6d-4ac9-91c4-4a73d5bc0557</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[.='0. Test Intro1']//ancestor::div[2]</value>
+         <value>//div[@class=&quot;ic-intro-for_box-with-number_title--warning&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

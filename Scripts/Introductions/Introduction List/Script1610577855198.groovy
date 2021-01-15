@@ -23,16 +23,155 @@ import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://web-portal-app-development.herokuapp.com')
+WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 10)
 
-WebUI.setText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 'e2e.test.introduction.list@onmyradar.com')
+WebUI.setText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), GlobalVariable.email_introduction_list)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Password'), 'tnM9pyQGa2UJlSvG75G1pA==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Password'), GlobalVariable.encryptedPassword)
 
 WebUI.click(findTestObject('Object Repository/Page_Auth0_SignIn/button_Log In'))
 
+WebUI.waitForElementPresent(findTestObject('Nav_Bar/Nav_Bar'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Nav_Bar/Introductions_Nav_Bar'), 10)
+
+WebUI.click(findTestObject('Nav_Bar/Introductions_Nav_Bar'))
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Approved_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Completed_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Declined_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Draft_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Pending_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Successfull_Intros'), 10)
+
+WebUI.verifyElementText(findTestObject('Page_Introduction_List/Successfull_Intros'), '1')
+
+clickUsingJS(findTestObject('Page_Introduction_List/Approved_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Approved_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Declined Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Intro_Sent_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Draft_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Waiting_For_Approval_Element'), 10)
+
+clickUsingJS(findTestObject('Page_Introduction_List/Approved_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Approved_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Declined Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Intro_Sent_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Draft_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Waiting_For_Approval_Element'), 10)
+
+clickUsingJS(findTestObject('Page_Introduction_List/Completed_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Intro_Sent_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Declined Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Approved_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Draft_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Waiting_For_Approval_Element'), 10)
+
+clickUsingJS(findTestObject('Page_Introduction_List/Completed_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Approved_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Declined Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Intro_Sent_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Draft_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Waiting_For_Approval_Element'), 10)
+
+clickUsingJS(findTestObject('Page_Introduction_List/Declined_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Declined Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Intro_Sent_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Approved_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Draft_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Waiting_For_Approval_Element'), 10)
+
+clickUsingJS(findTestObject('Page_Introduction_List/Declined_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Approved_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Declined Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Intro_Sent_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Draft_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Waiting_For_Approval_Element'), 10)
+
+clickUsingJS(findTestObject('Page_Introduction_List/Draft_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Draft_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Intro_Sent_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Approved_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Declined Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Waiting_For_Approval_Element'), 10)
+
+clickUsingJS(findTestObject('Page_Introduction_List/Draft_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Approved_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Declined Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Intro_Sent_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Draft_Element'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Waiting_For_Approval_Element'), 10)
+
+clickUsingJS(findTestObject('Page_Introduction_List/Pending_Check_Box'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Waiting_For_Approval_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Intro_Sent_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Approved_Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Declined Element'), 10)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Introduction_List/Draft_Element'), 10)
+
+clickUsingJS(findTestObject('Page_Introduction_List/Pending_Check_Box'), 10)
+
+def clickUsingJS(TestObject to, int timeout) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    WebElement element = WebUiCommonHelper.findWebElement(to, timeout)
+
+    JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+
+    executor.executeScript('arguments[0].click()', element)
+}
 

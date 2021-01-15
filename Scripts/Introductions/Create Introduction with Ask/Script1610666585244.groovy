@@ -21,14 +21,6 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 
-String subject = 'New Subject'
-
-String content = 'New Intro '
-
-String old_content = 'Hi 0. Test and 0. Test,\nI hope this introduction is fruitful!\nHappy connecting!\n______________________________\ne2e.test.create.introduction'
-
-String final_content = content + old_content
-
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
@@ -69,25 +61,49 @@ WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro2_User_Add_Bu
 
 clickUsingJS(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 30)
 
+WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Check_Answer1'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Check_Answer2'), 10)
+
+clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer1'), 30)
+
+WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Ask_Introduce'), 10)
+
+clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer1'), 30)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Create_Intro/Ask_Introduce'), 10)
+
+clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer2'), 30)
+
+WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Ask_Contact'), 10)
+
+clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer2'), 30)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Create_Intro/Ask_Contact'), 10)
+
+clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer1'), 30)
+
+WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Ask_Introduce'), 10)
+
+clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer2'), 30)
+
+WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Step_Disable'), 10)
+
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Subject_Input'), 10)
 
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Content'), 10)
 
-WebUI.setText(findTestObject('Page_Create_Intro/Intro_Subject_Input'), subject)
+WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Do_It_In_Advance'), 10)
 
-WebUI.setText(findTestObject('Page_Create_Intro/Intro_Content'), content)
+clickUsingJS(findTestObject('Page_Create_Intro/Do_It_In_Advance'), 30)
 
-WebUI.click(findTestObject('Page_Create_Intro/Send_Introduction_Button'))
+WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Send_All_In_Advance'), 10)
 
-WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Sent_Span'), 10)
+WebUI.click(findTestObject('Page_Create_Intro/Send_All_In_Advance'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Sent_Message'), 10)
+WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Waiting_For_Approval'), 10)
 
-WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Read_Only_Subject'), 10)
-
-WebUI.verifyElementText(findTestObject('Page_Create_Intro/Read_Only_Subject'), subject)
-
-WebUI.verifyElementText(findTestObject('Page_Create_Intro/Read_Only_Content'), final_content)
+WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Waiting_For_Approval_Label'), 10)
 
 def clickUsingJS(TestObject to, int timeout) {
     WebDriver driver = DriverFactory.getWebDriver()

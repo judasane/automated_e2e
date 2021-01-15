@@ -6,11 +6,11 @@
    <elementGuidId>ff946323-2998-4d22-97c4-241294f5183d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id=&quot;contacts_container&quot;]/div[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
