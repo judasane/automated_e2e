@@ -17,4 +17,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Contact/Create Contact</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>8cfad7d9-4813-435a-b63d-29b12c178a28</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Contact/Edit Contact</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

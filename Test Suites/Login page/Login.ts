@@ -15,12 +15,12 @@
       <guid>e193994a-6d15-4084-bc44-0d8fbd9c371f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/OMR-login/Login</testCaseId>
+      <testCaseId>Test Cases/Login/Login</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>308915a7-6713-41ba-948d-d167082881fb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/OMR-login/Login with contacts</testCaseId>
+      <testCaseId>Test Cases/Login/Login with contacts</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -35,7 +35,11 @@ WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 5)
 
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 5)
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 5)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 5)
 
 WebUI.setText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), GlobalVariable.email_create_introduction)
 
@@ -44,6 +48,8 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_I
 WebUI.click(findTestObject('Object Repository/Page_Auth0_SignIn/button_Log In'))
 
 WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contacts_Tittle'), 20)
+
+WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Contacts_Tittle'), 20)
 
 WebUI.setText(findTestObject('Page_Contacts_Dashboard/Search_Nav_Bar'), '0.')
 
@@ -55,23 +61,35 @@ WebUI.mouseOver(findTestObject('Page_Contacts_Dashboard/Test_Intro_User_Row'))
 
 WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Start_Intro_Button'), 10)
 
+WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Start_Intro_Button'), 10)
+
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Start_Intro_Button'))
 
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Search_Input'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Search_Input'), 10)
 
 WebUI.setText(findTestObject('Page_Create_Intro/Search_Input'), 'Test')
 
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 5)
 
+WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 5)
+
 WebUI.mouseOver(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'))
 
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 0)
 
 clickUsingJS(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 30)
 
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Subject_Input'), 10)
 
+WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro_Subject_Input'), 10)
+
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Content'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro_Content'), 10)
 
 WebUI.setText(findTestObject('Page_Create_Intro/Intro_Subject_Input'), subject)
 
@@ -81,9 +99,15 @@ WebUI.click(findTestObject('Page_Create_Intro/Send_Introduction_Button'))
 
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Sent_Span'), 10)
 
+WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro_Sent_Span'), 10)
+
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Sent_Message'), 10)
 
+WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro_Sent_Message'), 10)
+
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Read_Only_Subject'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Read_Only_Subject'), 10)
 
 WebUI.verifyElementText(findTestObject('Page_Create_Intro/Read_Only_Subject'), subject)
 

@@ -4,4 +4,44 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://web-portal-app-development.herokuapp.com/'</initValue>
+      <name>url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.empty@onmyradar.com'</initValue>
+      <name>email_empty</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'tnM9pyQGa2UJlSvG75G1pA=='</initValue>
+      <name>encryptedPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test@onmyradar.com'</initValue>
+      <name>email_contacts</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.create.contact@onmyradar.com'</initValue>
+      <name>email_create_contacts</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.introduction.list@onmyradar.com'</initValue>
+      <name>email_introduction_list</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.create.introduction@onmyradar.com'</initValue>
+      <name>email_create_introduction</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.update.contact@onmyradar.com'</initValue>
+      <name>email_edit_contact</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -20,14 +20,17 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.waitForElementPresent(findTestObject('Page_Auth0_SignIn/OMR_Logo'), 
-    0)
+WebUI.waitForElementPresent(findTestObject('Page_Auth0_SignIn/OMR_Logo'), 10)
 
-WebUI.setText(findTestObject('Page_Auth0_SignIn/Log_In_Email'), GlobalVariable.email_contacts)
+WebUI.verifyElementPresent(findTestObject('Page_Auth0_SignIn/OMR_Logo'), 10)
+
+WebUI.setText(findTestObject('Page_Auth0_SignIn/Log_In_Email'), GlobalVariable.email_empty)
 
 WebUI.setEncryptedText(findTestObject('Page_Auth0_SignIn/Log_In_Password'), GlobalVariable.encryptedPassword)
 
 WebUI.sendKeys(findTestObject('Page_Auth0_SignIn/Log_In_Password'), Keys.chord(Keys.ENTER))
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/contacts_message'), 0)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/start_your_experience_message'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/start_your_experience_message'), 10)
 
