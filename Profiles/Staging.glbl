@@ -6,12 +6,37 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://web-portal-app.herokuapp.com/login'</initValue>
+      <initValue>'https://web-portal-app-staging.herokuapp.com/'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'tykiblood'</initValue>
-      <name>email</name>
+      <initValue>'e2e.test.empty@onmyradar.com'</initValue>
+      <name>email_empty</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'tnM9pyQGa2V5MueZG8KQzZg2FEJk56Lt'</initValue>
+      <name>encryptedPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test@onmyradar.com'</initValue>
+      <name>email_contacts</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.create.contact@onmyradar.com'</initValue>
+      <name>email_create_contacts</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.introduction.list@onmyradar.com'</initValue>
+      <name>email_introduction_list</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.create.introduction@onmyradar.com'</initValue>
+      <name>email_create_introduction</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

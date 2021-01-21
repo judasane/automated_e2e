@@ -69,9 +69,9 @@ WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro2_User_Add_But
 
 WebUI.mouseOver(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 0)
+WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 5)
 
 clickUsingJS(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 30)
 
@@ -153,7 +153,17 @@ def clickUsingJS(TestObject to, int timeout) {
     WebElement element = WebUiCommonHelper.findWebElement(to, timeout)
 
     JavascriptExecutor executor = ((driver) as JavascriptExecutor)
-
-    executor.executeScript('arguments[0].click()', element)
+	executor.executeScript("""
+		function triggerMouseEvent(targetNode, eventType) {
+        	var clickEvent = document.createEvent('MouseEvents');
+        	clickEvent.initEvent(eventType, true, true);
+        	targetNode.dispatchEvent(clickEvent);
+		};
+		
+		triggerMouseEvent(arguments[0], "mouseover");
+		triggerMouseEvent(arguments[0], "mousedown");
+		triggerMouseEvent(arguments[0], "mouseup");
+		triggerMouseEvent(arguments[0], "click");
+	""", element)
 }
 
