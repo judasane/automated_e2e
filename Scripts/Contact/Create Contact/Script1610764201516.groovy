@@ -26,9 +26,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 0)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 10)
 
 WebUI.setText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), GlobalVariable.email_create_contacts)
 
@@ -36,11 +40,13 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_I
 
 WebUI.click(findTestObject('Object Repository/Page_Auth0_SignIn/button_Log In'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Test_User_Row'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/First_Contact_Row'), 10)
+
+WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Create_New_Contact_Button'), 10)
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Create_New_Contact_Button'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Email_input'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Email_input'), 10)
 
 WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Email_input'), new_contact_email)
 
@@ -58,7 +64,9 @@ WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Notes_input'), 'So
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'))
 
-WebUI.scrollToPosition(9999999, 9999999)
+WebUI.verifyElementPresent(findTestObject('Nav_Bar/Search_Bar'), 0)
+
+WebUI.setText(findTestObject('Nav_Bar/Search_Bar'), new_contact_name)
 
 String xpath = ('//div[.="' + new_contact_name) + ' User"]//ancestor::div[2]'
 

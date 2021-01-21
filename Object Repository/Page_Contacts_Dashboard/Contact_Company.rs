@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Waiting_For_Approval</name>
+   <name>Contact_Company</name>
    <tag></tag>
-   <elementGuidId>2be28206-5f6d-4ac9-91c4-4a73d5bc0557</elementGuidId>
+   <elementGuidId>9090796b-88cd-4795-a1a6-b17b3a2cf909</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class=&quot;ic-intro-for_box-with-number_title--warning&quot;]</value>
+         <value>//div[@class=&quot;contact-details_profile-wrapper&quot;]/div[@class=&quot;px_20 py_4&quot;]/div[4]/div[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

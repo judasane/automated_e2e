@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Waiting_For_Approval</name>
+   <name>Group1_Checkbox</name>
    <tag></tag>
-   <elementGuidId>2be28206-5f6d-4ac9-91c4-4a73d5bc0557</elementGuidId>
+   <elementGuidId>5d2ca522-3d7f-4416-a765-ab45b4e0f381</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@class=&quot;ic-intro-for_box-with-number_title--warning&quot;]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//input[@name=&quot;group1&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
