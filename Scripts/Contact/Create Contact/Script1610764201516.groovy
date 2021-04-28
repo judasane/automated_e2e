@@ -18,19 +18,21 @@ import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang.RandomStringUtils as RandStr
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-String new_contact_first_name = RandStr.randomNumeric(5) + '+First_name'
+String random_first_name = RandStr.randomNumeric(5) + '+First_name'
 
-String new_contact_Last_name = RandStr.randomNumeric(5) + '+Last_name'
+String random_last_name = RandStr.randomNumeric(5) + '+Last_name'
 
-String new_contact_full_name = (new_contact_first_name + ' ') + new_contact_Last_name
+String full_name = (random_first_name + ' ') + random_last_name
 
-String new_contact_email = new_contact_first_name + '.test@email.com'
-
-String new_contact_title = 'Some Tittle'
-
-String new_contact_company = 'Some company'
-
-String new_contact_notes = 'Some Notes'
+def contact_data = [
+	first_name: random_first_name,
+	last_name: random_last_name,
+	full_name: full_name,
+	email: random_first_name + '.test@email.com',
+	title: 'Some Tittle',
+	company: 'Some company',
+	notes: 'Some Notes'
+	]
 
 WebUI.openBrowser('')
 
@@ -58,25 +60,25 @@ WebUI.click(findTestObject('Page_Contacts_Dashboard/Create_New_Contact_Button'))
 
 WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Email_input'), 10)
 
-WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Email_input'), new_contact_email)
+WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Email_input'), contact_data['email'])
 
-WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_First_Name_input'), new_contact_first_name)
+WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_First_Name_input'), contact_data['first_name'])
 
-WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Last_Name_input'), new_contact_Last_name)
+WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Last_Name_input'), contact_data['last_name'])
 
-WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Tittle_input'), new_contact_title)
+WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Tittle_input'), contact_data['title'])
 
-WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Company_input'), new_contact_company)
+WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Company_input'), contact_data['company'])
 
-WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Notes_input'), new_contact_notes)
+WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Notes_input'), contact_data['notes'])
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'))
 
 WebUI.verifyElementPresent(findTestObject('Nav_Bar/Search_Bar'), 0)
 
-WebUI.setText(findTestObject('Nav_Bar/Search_Bar'), new_contact_first_name)
+WebUI.setText(findTestObject('Nav_Bar/Search_Bar'), contact_data['first_name'])
 
-String xpath = ('//div[.="' + new_contact_full_name) + '"]//ancestor::div[2]'
+String xpath = ('//div[.="' + contact_data['full_name']) + '"]//ancestor::div[2]'
 
 TestObject contact = new TestObject('objectName')
 
@@ -92,19 +94,19 @@ WebUI.click(findTestObject('Page_Contacts_Dashboard/Contact_Edit_Button'))
 
 WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Name'), 10)
 
-WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Name'), new_contact_full_name)
+WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Name'), contact_data['full_name'])
 
 WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Title'), 10)
 
-WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Title'), new_contact_title)
+WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Title'), contact_data['title'])
 
 WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Company'), 10)
 
-WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Company'), new_contact_company)
+WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Company'), contact_data['company'])
 
 WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Notes'), 10)
 
-WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Notes'), new_contact_notes)
+WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Notes'), contact_data['notes'])
 
 WebUI.closeBrowser()
 
