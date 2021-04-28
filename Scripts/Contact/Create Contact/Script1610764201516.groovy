@@ -24,15 +24,8 @@ String random_last_name = RandStr.randomNumeric(5) + '+Last_name'
 
 String full_name = (random_first_name + ' ') + random_last_name
 
-def contact_data = [
-	first_name: random_first_name,
-	last_name: random_last_name,
-	full_name: full_name,
-	email: random_first_name + '.test@email.com',
-	title: 'Some Tittle',
-	company: 'Some company',
-	notes: 'Some Notes'
-	]
+def contact_data = [('first_name') : random_first_name, ('last_name') : random_last_name, ('full_name') : full_name, ('email') : random_first_name + 
+    '.test@email.com', ('title') : 'Some Tittle', ('company') : 'Some company', ('notes') : 'Some Notes']
 
 WebUI.openBrowser('')
 
@@ -40,11 +33,11 @@ WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 1)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), 1)
 
 WebUI.setText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), GlobalVariable.email_create_contacts)
 
@@ -54,15 +47,15 @@ WebUI.click(findTestObject('Object Repository/Page_Auth0_SignIn/button_Log In'))
 
 WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/First_Contact_Row'), 10)
 
-WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Create_New_Contact_Button'), 10)
+WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Create_New_Contact_Button'), 1)
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Create_New_Contact_Button'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Email_input'), 10)
-
-WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Email_input'), contact_data['email'])
+WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Email_input'), 1)
 
 WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_First_Name_input'), contact_data['first_name'])
+
+WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Email_input'), contact_data['email'])
 
 WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Last_Name_input'), contact_data['last_name'])
 
@@ -74,11 +67,11 @@ WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Notes_input'), con
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'))
 
-WebUI.verifyElementPresent(findTestObject('Nav_Bar/Search_Bar'), 0)
+WebUI.verifyElementPresent(findTestObject('Nav_Bar/Search_Bar'), 1)
 
 WebUI.setText(findTestObject('Nav_Bar/Search_Bar'), contact_data['first_name'])
 
-String xpath = ('//div[.="' + contact_data['full_name']) + '"]//ancestor::div[2]'
+String xpath = ('//div[.="' + (contact_data['full_name'])) + '"]//ancestor::div[2]'
 
 TestObject contact = new TestObject('objectName')
 
@@ -86,25 +79,25 @@ contact.addProperty('xpath', ConditionType.EQUALS, xpath)
 
 WebUI.waitForElementPresent(contact, 10)
 
-WebUI.verifyElementPresent(contact, 10)
+WebUI.verifyElementPresent(contact, 1)
 
 WebUI.mouseOver(contact)
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Contact_Edit_Button'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Name'), 10)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Name'), 1)
 
 WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Name'), contact_data['full_name'])
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Title'), 10)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Title'), 1)
 
 WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Title'), contact_data['title'])
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Company'), 10)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Company'), 1)
 
 WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Company'), contact_data['company'])
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Notes'), 10)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Notes'), 1)
 
 WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Notes'), contact_data['notes'])
 
