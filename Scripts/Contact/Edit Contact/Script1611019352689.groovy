@@ -55,8 +55,6 @@ WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Tittle_input'), 'S
 
 WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Company_input'), 'Some company 2')
 
-WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Bio_input'), 'Some bio 2')
-
 WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Notes_input'), 'Some notes 2')
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'))
@@ -71,8 +69,6 @@ WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Tittle')
 
 WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Company'), 'Some company 2')
 
-WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Bio'), 'Some bio 2')
-
 WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Notes'), 'Some notes 2')
 
 WebUI.mouseOver(findTestObject('Page_Contacts_Dashboard/Contact_Name'))
@@ -86,8 +82,6 @@ WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Last_Name_input'),
 WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Tittle_input'), 'Some Tittle')
 
 WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Company_input'), 'Some company')
-
-WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Bio_input'), 'Some bio')
 
 WebUI.setText(findTestObject('Page_Contacts_Dashboard/Contact_Notes_input'), 'Some notes')
 
