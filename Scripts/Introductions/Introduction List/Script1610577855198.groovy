@@ -285,7 +285,7 @@ WebUI.verifyElementPresent(findTestObject('Page_Introduction_List/Search_Results
 
 Integer results = WebUiCommonHelper.findWebElements(findTestObject('Page_Introduction_List/Search_Results'), 10).size()
 
-assert results == 4
+assert results == 5
 
 def clickUsingJS(TestObject to, int timeout) {
     WebDriver driver = DriverFactory.getWebDriver()
