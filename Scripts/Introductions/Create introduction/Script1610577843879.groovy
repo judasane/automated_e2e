@@ -25,7 +25,7 @@ String subject = 'New Subject'
 
 String content = 'New Intro '
 
-String old_content = 'Hi 0. Test and 0. Test,\nI hope this introduction is fruitful!\nHappy connecting!\n______________________________\ne2e.test.create.introduction'
+String old_content = 'Hi 0. Test and 0. Test\n0. Test, please meet 0. Test.\nSome intro\n0. Test, please meet 0. Test.\nSome user\nI hope this introduction is fruitful!\nHappy connecting!\ne2e.test.create.introduction'
 
 String final_content = content + old_content
 
@@ -51,7 +51,7 @@ WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contacts_Tit
 
 WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Contacts_Tittle'), 20)
 
-WebUI.setText(findTestObject('Page_Contacts_Dashboard/Search_Nav_Bar'), '0.')
+WebUI.setText(findTestObject('Page_Contacts_Dashboard/Search_Nav_Bar'), '0. Test')
 
 WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Test_Intro_User_Row'), 20)
 
@@ -69,7 +69,7 @@ WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Search_Input'), 10
 
 WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Search_Input'), 10)
 
-WebUI.setText(findTestObject('Page_Create_Intro/Search_Input'), 'Test')
+WebUI.setText(findTestObject('Page_Create_Intro/Search_Input'), 'intro2')
 
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 5)
 
@@ -119,17 +119,8 @@ def clickUsingJS(TestObject to, int timeout) {
     WebElement element = WebUiCommonHelper.findWebElement(to, timeout)
 
     JavascriptExecutor executor = ((driver) as JavascriptExecutor)
-	executor.executeScript("""
-		function triggerMouseEvent(targetNode, eventType) {
-        	var clickEvent = document.createEvent('MouseEvents');
-        	clickEvent.initEvent(eventType, true, true);
-        	targetNode.dispatchEvent(clickEvent);
-		};
-		
-		triggerMouseEvent(arguments[0], "mouseover");
-		triggerMouseEvent(arguments[0], "mousedown");
-		triggerMouseEvent(arguments[0], "mouseup");
-		triggerMouseEvent(arguments[0], "click");
-	""", element)
+
+    executor.executeScript('\n\t\tfunction triggerMouseEvent(targetNode, eventType) {\n        \tvar clickEvent = document.createEvent(\'MouseEvents\');\n        \tclickEvent.initEvent(eventType, true, true);\n        \ttargetNode.dispatchEvent(clickEvent);\n\t\t};\n\t\t\n\t\ttriggerMouseEvent(arguments[0], "mouseover");\n\t\ttriggerMouseEvent(arguments[0], "mousedown");\n\t\ttriggerMouseEvent(arguments[0], "mouseup");\n\t\ttriggerMouseEvent(arguments[0], "click");\n\t', 
+        element)
 }
 
