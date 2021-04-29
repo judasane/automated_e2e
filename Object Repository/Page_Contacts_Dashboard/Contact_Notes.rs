@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;contact-details_profile-wrapper&quot;]/div[@class=&quot;px_20 py_4&quot;]/div[7]/div[2]</value>
+         <value>//div[@class=&quot;contact-details_profile-wrapper&quot;]/div[@class=&quot;px_20 py_4&quot;]/div[6]/div[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
