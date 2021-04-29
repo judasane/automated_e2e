@@ -85,21 +85,21 @@ WebUI.mouseOver(contact)
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Contact_Edit_Button'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Name'), 1)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Name'), 1)
 
-WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Name'), contact_data['full_name'])
+WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Name'), contact_data['full_name'])
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Title'), 1)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Tittle'), 1)
 
-WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Title'), contact_data['title'])
+WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Tittle'), contact_data['title'])
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Company'), 1)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Company'), 1)
 
-WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Company'), contact_data['company'])
+WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Company'), contact_data['company'])
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Details_Notes'), 1)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Notes'), 1)
 
-WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Details_Notes'), contact_data['notes'])
+WebUI.verifyElementText(findTestObject('Page_Contacts_Dashboard/Contact_Notes'), contact_data['notes'])
 
 WebUI.closeBrowser()
 
