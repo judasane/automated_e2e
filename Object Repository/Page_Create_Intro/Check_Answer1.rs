@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[@class=&quot;toggle  mr_12&quot;])[1]</value>
+         <value>//*[@id=&quot;ask1&quot;]/parent::*</value>
       </entry>
       <entry>
          <key>BASIC</key>
