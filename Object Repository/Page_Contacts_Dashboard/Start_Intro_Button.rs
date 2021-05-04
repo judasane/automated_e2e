@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[.='Start intro'])[2]</value>
+         <value>//*[text() = &quot;tykiblood1992+intro1@gmail.com&quot;]/parent::*/parent::*/parent::*/*[@class=&quot;contacts-list_start-intro&quot;]/button[text() = &quot;Start intro&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
