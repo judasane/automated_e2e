@@ -85,11 +85,15 @@ WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Check_Answer2'), 5)
 
 clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer1'), 30)
 
+WebUI.waitForElementNotPresent(findTestObject('Page_Create_Intro/Check_Answer_disabled'), 10)
+
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Ask_Introduce'), 5)
 
 WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Ask_Introduce'), 5)
 
 clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer1'), 30)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Create_Intro/Check_Answer_disabled'), 10)
 
 WebUI.waitForElementNotPresent(findTestObject('Page_Create_Intro/Ask_Introduce'), 5)
 
@@ -97,11 +101,15 @@ WebUI.verifyElementNotPresent(findTestObject('Page_Create_Intro/Ask_Introduce'),
 
 clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer2'), 30)
 
+WebUI.waitForElementNotPresent(findTestObject('Page_Create_Intro/Check_Answer_disabled'), 10)
+
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Ask_Contact'), 5)
 
 WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Ask_Contact'), 5)
 
 clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer2'), 30)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Create_Intro/Check_Answer_disabled'), 10)
 
 WebUI.waitForElementNotPresent(findTestObject('Page_Create_Intro/Ask_Contact'), 5)
 
@@ -109,11 +117,15 @@ WebUI.verifyElementNotPresent(findTestObject('Page_Create_Intro/Ask_Contact'), 5
 
 clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer1'), 30)
 
+WebUI.waitForElementNotPresent(findTestObject('Page_Create_Intro/Check_Answer_disabled'), 10)
+
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Ask_Introduce'), 5)
 
 WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Ask_Introduce'), 5)
 
 clickUsingJS(findTestObject('Page_Create_Intro/Check_Answer2'), 30)
+
+WebUI.waitForElementNotPresent(findTestObject('Page_Create_Intro/Check_Answer_disabled'), 10)
 
 WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Do_It_In_Advance'), 5)
 

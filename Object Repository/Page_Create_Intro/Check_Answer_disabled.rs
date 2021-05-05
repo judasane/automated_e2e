@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Check_Answer2</name>
+   <name>Check_Answer_disabled</name>
    <tag></tag>
-   <elementGuidId>d013c263-43a6-4663-80b5-b0678d925f01</elementGuidId>
+   <elementGuidId>18c51687-ca40-4561-85cb-be82585b20f5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;ask2&quot;]/parent::*</value>
+         <value>//*[@class=&quot;toggle toggle_disabled mr_12&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
