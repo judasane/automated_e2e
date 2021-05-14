@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;app-root&quot;]/div[2]/div[1]/div/div[1]/nav/a[6]</value>
+         <value>//*[@class=&quot;main-menu_item&quot;][.=&quot;Sync settings&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

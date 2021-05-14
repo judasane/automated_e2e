@@ -11,7 +11,10 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app-root']/div[2]/nav/div[2]/div[2]/ul/a</value>
+         <value>//a[@class=&quot;mdl-menu__item user-menu_item pl_12 mdl-js-ripple-effect&quot;] [.=&quot;Profile&quot;]
+
+
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

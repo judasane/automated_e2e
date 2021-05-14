@@ -23,8 +23,6 @@ import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import org.openqa.selenium.Keys as Keys
 
-String search_text = 'Example Contact2'
-
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
@@ -41,11 +39,13 @@ WebUI.click(findTestObject('Object Repository/Page_Auth0_SignIn/button_Log In'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Contacts_Dashboard/contacts_message'), 10)
 
+WebUI.verifyElementPresent(findTestObject('Nav_Bar/Profile_Dropdown'), 0)
+
 WebUI.click(findTestObject('Nav_Bar/Profile_Dropdown'))
 
-WebUI.click(findTestObject('Nav_Bar/Profile_Link'))
+WebUI.verifyElementPresent(findTestObject('Nav_Bar/Profile_Link'), 0)
 
-WebUI.navigateToUrl('https://app-dev.onmyradar.io/profile')
+WebUI.click(findTestObject('Nav_Bar/Profile_Link'))
 
 WebUI.verifyElementPresent(findTestObject('Page_profile/Copy_Button'), 10)
 
@@ -53,9 +53,9 @@ WebUI.verifyElementPresent(findTestObject('Page_profile/User_Link'), 10)
 
 WebUI.click(findTestObject('Nav_Bar/Profile_Dropdown'))
 
-WebUI.click(findTestObject('Nav_Bar/Log_Out_Button'))
+WebUI.verifyElementClickable(findTestObject('Nav_Bar/Log_Out_Button'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://app-dev.onmyradar.io/auth-login')
+WebUI.click(findTestObject('Nav_Bar/Log_Out_Button'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
 

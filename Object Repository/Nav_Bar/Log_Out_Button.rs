@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app-root']/div[2]/nav/div[2]/div[2]/ul/div/button/span</value>
+         <value>//button[@class=&quot;mdl-button mdl-js-button mdl-js-ripple-effect button  full button-accent-outline&quot;] [.=&quot;Log out&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

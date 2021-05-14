@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app-root']/div[2]/div[2]/div[2]/a[2]
+         <value>//a[@class=&quot;sync-links mb_16 mt_20&quot;][text()=&quot;Sync Microsoft account&quot;]
 </value>
       </entry>
    </selectorCollection>
