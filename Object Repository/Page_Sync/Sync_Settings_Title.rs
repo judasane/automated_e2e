@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app-root']/div[2]/div[2]/div</value>
+         <value>//div[@class='sync-contacts_title mt_40']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
