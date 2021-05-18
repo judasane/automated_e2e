@@ -49,4 +49,9 @@
       <initValue>'e2e.test.contacts.list@onmyradar.com'</initValue>
       <name>email_contact_list</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.quick.intro@gmail.com'</initValue>
+      <name>email_quick_intro</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

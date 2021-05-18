@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Contacts_Tittle</name>
+   <name>Start_Quick_Intro_Button</name>
    <tag></tag>
-   <elementGuidId>eec2b8f9-b4d7-49c1-af2b-6728fbad14a2</elementGuidId>
+   <elementGuidId>19d0619b-fd08-4128-a981-fa0fb5e1f6af</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//h1[@class='mr_20'][.='Contacts']</value>
+         <value>//*[text() = &quot;e2e.test.quick.intro+main@gmail.com&quot;]/parent::*/parent::*/parent::*/*[@class=&quot;contacts-list_start-intro&quot;]/button[text() = &quot;Start quick intro&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
