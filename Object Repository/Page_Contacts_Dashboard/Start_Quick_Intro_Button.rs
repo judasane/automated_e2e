@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[text() = &quot;e2e.test.quick.intro+main@gmail.com&quot;]/parent::*/parent::*/parent::*/*[@class=&quot;contacts-list_start-intro&quot;]/button[text() = &quot;Start quick intro&quot;]</value>
+         <value>//*[text() = &quot;introduced.omr@gmail.com&quot;]/parent::*/parent::*/parent::*/*[@class=&quot;contacts-list_start-intro&quot;]/button[text() = &quot;Start quick intro&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

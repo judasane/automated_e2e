@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Section_Main_Contact</name>
+   <name>Section_Select_Contacts (1)</name>
    <tag></tag>
-   <elementGuidId>c2592859-d5e1-4d3b-8a47-759de9c2494a</elementGuidId>
+   <elementGuidId>0b2c2c15-ef98-41e0-806c-ebbadbe02ec8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//section[@class='quick-intro_sections p_14'][1]</value>
+         <value>//section[@class='quick-intro_sections p_14'][2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

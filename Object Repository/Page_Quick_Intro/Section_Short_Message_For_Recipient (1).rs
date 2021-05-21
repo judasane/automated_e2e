@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Section_Short_Message_For_Recipient</name>
+   <name>Section_Short_Message_For_Recipient (1)</name>
    <tag></tag>
-   <elementGuidId>cb1c0d88-16bd-4aaa-a7fc-c7a8b04049d8</elementGuidId>
+   <elementGuidId>47a15877-895a-444b-bf88-36ce55f6c8a7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
