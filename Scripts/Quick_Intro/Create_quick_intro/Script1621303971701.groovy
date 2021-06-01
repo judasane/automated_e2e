@@ -84,7 +84,7 @@ WebUI.click(findTestObject('Page_Quick_Intro/button_Yes, Request Introduction me
 
 WebUI.waitForElementPresent(findTestObject('Page_Quick_Intro/Modal_introduced_contact_introduction_message_sent'), 5)
 
-WebUI.navigateToUrl('https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
+WebUI.navigateToUrl(GlobalVariable.gmail_url)
 
 WebUI.waitForPageLoad(20)
 
@@ -150,9 +150,7 @@ WebUI.waitForElementVisible(findTestObject('Page_Contacts_Dashboard/Main_Contact
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Quick_Intro/div_Main Contact'), 0)
-
-WebUI.click(findTestObject('Page_Quick_Intro/div_Main Contact'))
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Name'), 0)
 
 WebUI.mouseOver(findTestObject('Page_Contacts_Dashboard/Contact_Name'))
 
@@ -167,21 +165,21 @@ WebUI.waitForElementVisible(findTestObject('Page_Contacts_Dashboard/Edit_contact
 
 WebUI.setText(findTestObject('Page_Contacts_Dashboard/Edit_contact_introduction_message'), 'A message for introduced contact')
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'), 5)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'), 1)
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'))
 
-WebUI.verifyElementClickable(findTestObject('Nav_Bar/Profile_Dropdown'))
+WebUI.verifyElementVisible(findTestObject('Nav_Bar/Profile_Dropdown'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Nav_Bar/Profile_Dropdown'))
 
-WebUI.verifyElementClickable(findTestObject('Nav_Bar/Log_Out_Button'))
+WebUI.verifyElementVisible(findTestObject('Nav_Bar/Log_Out_Button'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Nav_Bar/Log_Out_Button'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 1)
 
 WebUI.closeBrowser()
 

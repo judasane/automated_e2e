@@ -6,12 +6,12 @@
    <elementGuidId>1fad0242-0c54-4cdb-b9c3-1adefcdfd45b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='app-root']/div[2]/div/button/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>span.mdl-button__ripple-container</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button//span[@class='mdl-button__ripple-container']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

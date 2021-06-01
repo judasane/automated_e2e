@@ -69,4 +69,9 @@
       <initValue>'introduced.omr@gmail.com'</initValue>
       <name>recipient_contact_email</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;service=mail&amp;sacu=1&amp;rip=1&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin'</initValue>
+      <name>gmail_url</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
