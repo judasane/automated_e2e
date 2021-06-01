@@ -4,15 +4,24 @@
    <name>Main_Contact_Row</name>
    <tag></tag>
    <elementGuidId>147311c7-7523-4b55-8d7d-6a20d0c27fcd</elementGuidId>
+   <imagePath></imagePath>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[text() = &quot;${GlobalVariable.main_contact_email}&quot;]/parent::*/parent::*/parent::*/parent::*
+</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;app-root&quot;)/div[2]/div[@class=&quot;container container_table-view px_0&quot;]/section[@class=&quot;il-table-view p_32&quot;]/div[2]/table[@class=&quot;mdl-data-table mdl-js-data-table table il-table-view_table&quot;]/tbody[1]/tr[@class=&quot;contacts-list_row&quot;]/td[@class=&quot;mdl-data-table__cell--non-numeric&quot;]/div[@class=&quot;contacts-list_start-intro&quot;]/button[@class=&quot;mdl-button mdl-js-button mdl-js-ripple-effect button contacts-list_start-intro-btn my_12 ml_12 button-xs button-action&quot;]/span[@class=&quot;mdl-button__ripple-container&quot;]</value>
+      </entry>
       <entry>
          <key>CSS</key>
          <value>button.mdl-button.mdl-js-button.mdl-js-ripple-effect.button.contacts-list_start-intro-btn.my_12.ml_12.button-xs.button-action > span.mdl-button__ripple-container</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[text() = &quot;introduced.omr@gmail.com&quot;]/parent::*/parent::*/parent::*/parent::*
-</value>
+         <key>IMAGE</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

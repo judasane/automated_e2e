@@ -54,4 +54,19 @@
       <initValue>'e2e.test.quick.intro@gmail.com'</initValue>
       <name>email_quick_intro</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://notifications-api-development.herokuapp.com/'</initValue>
+      <name>notifications_api_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'introduced.omr@gmail.com'</initValue>
+      <name>main_contact_email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'introduced.omr@gmail.com'</initValue>
+      <name>recipient_contact_email</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

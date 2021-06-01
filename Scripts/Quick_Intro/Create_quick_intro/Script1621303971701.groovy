@@ -25,7 +25,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://notifications-api-development.herokuapp.com')
+//TODO: Remove this if we're sure that notifications-api is awake always
+WebUI.navigateToUrl(GlobalVariable.notifications_api_url)
 
 WebUI.waitForPageLoad(20)
 
@@ -49,11 +50,11 @@ WebUI.verifyElementClickable(findTestObject('Object Repository/Page_Contacts_Das
 
 WebUI.click(findTestObject('Object Repository/Page_Contacts_Dashboard/Start_Quick_Intro_Button'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Quick_Intro/Section_Main_Contact (1)'), 10)
+WebUI.verifyElementPresent(findTestObject('Page_Quick_Intro/Section_Main_Contact'), 10)
 
-WebUI.verifyElementPresent(findTestObject('Page_Quick_Intro/Section_Select_Contacts (1)'), 5)
+WebUI.verifyElementPresent(findTestObject('Page_Quick_Intro/Section_Select_Contacts'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Page_Quick_Intro/Section_Short_Message_For_Recipient (1)'), 5)
+WebUI.verifyElementPresent(findTestObject('Page_Quick_Intro/Section_Short_Message_For_Recipient'), 5)
 
 WebUI.verifyElementPresent(findTestObject('Page_Quick_Intro/button_Got It'), 5)
 
@@ -69,15 +70,13 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Create_Intro/I
 
 WebUI.mouseOver(findTestObject('Object Repository/Page_Create_Intro/Intro2_User_Add_Button'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Create_Intro/Intro2_User_Add_Button'), 5)
-
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Create_Intro/Intro2_User_Add_Button'), 5)
 
 WebUI.click(findTestObject('Object Repository/Page_Create_Intro/Intro2_User_Add_Button'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementClickable(findTestObject('Page_Quick_Intro/span_Request Introduction message_mdl-butto_015823'))
+WebUI.verifyElementClickable(findTestObject('Page_Quick_Intro/Request_intro_message_to_main_contact_button'))
 
-WebUI.click(findTestObject('Page_Quick_Intro/span_Request Introduction message_mdl-butto_015823'))
+WebUI.click(findTestObject('Page_Quick_Intro/Request_intro_message_to_main_contact_button'))
 
 WebUI.verifyElementClickable(findTestObject('Page_Quick_Intro/button_Yes, Request Introduction message'))
 
@@ -89,21 +88,23 @@ WebUI.navigateToUrl('https://accounts.google.com/signin/v2/identifier?continue=h
 
 WebUI.waitForPageLoad(20)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Gmail/input_Ir a Gmail_identifier'), 5)
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Gmail_form_email_address'), 5)
 
-WebUI.setText(findTestObject('Object Repository/Page_Gmail/input_Ir a Gmail_identifier'), 'introduced.omr@gmail.com')
+WebUI.setText(findTestObject('Page_Gmail/Gmail_form_email_address'), GlobalVariable.main_contact_email)
 
-WebUI.verifyElementClickable(findTestObject('Object Repository/Page_Gmail/div_Siguiente_VfPpkd-RLmnJb'))
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Gmail_form_next_button'), 5)
 
-WebUI.click(findTestObject('Object Repository/Page_Gmail/div_Siguiente_VfPpkd-RLmnJb'))
+WebUI.click(findTestObject('Page_Gmail/Gmail_form_next_button'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Gmail/input_Se han producido demasiados intentos _9b645a'), 
-    5)
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Gmail_form_password'), 5)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Gmail/input_Se han producido demasiados intentos _9b645a'), 
-    'tnM9pyQGa2UJlSvG75G1pA==')
+WebUI.setEncryptedText(findTestObject('Page_Gmail/Gmail_form_password'), GlobalVariable.encryptedPassword)
 
-WebUI.click(findTestObject('Object Repository/Page_Gmail/div_Siguiente_VfPpkd-RLmnJb_1'))
+WebUI.click(findTestObject('Page_Gmail/Gmail_form_login_button'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Gmail_Inbox/Refresh_button'), 0)
+
+WebUI.click(findTestObject('Page_Gmail_Inbox/Refresh_button'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Page_Quick_Intro/Quick_intro_message_request_email'), 5)
 
@@ -115,53 +116,60 @@ WebUI.click(findTestObject('Page_Quick_Intro/Introduction_request_link'))
 
 WebUI.switchToWindowIndex('1')
 
-WebUI.waitForElementVisible(findTestObject('Page_Quick_Intro/input_BIO REQUEST_first_name'), 5)
+WebUI.waitForElementVisible(findTestObject('Page_Introduction_Request_Form/Request_intro_message_form_first_name_input'), 
+    5)
 
-WebUI.setText(findTestObject('Page_Quick_Intro/input_BIO REQUEST_first_name'), 'Main')
+WebUI.setText(findTestObject('Page_Introduction_Request_Form/Request_intro_message_form_first_name_input'), 'Main')
 
-WebUI.waitForElementVisible(findTestObject('Page_Quick_Intro/input_Field required_last_name'), 5)
+WebUI.waitForElementVisible(findTestObject('Page_Introduction_Request_Form/Request_intro_message_form_last_name_input'), 
+    5)
 
-WebUI.click(findTestObject('Page_Quick_Intro/input_Field required_last_name'))
+WebUI.setText(findTestObject('Page_Introduction_Request_Form/Request_intro_message_form_last_name_input'), 'Test')
 
-WebUI.waitForElementVisible(findTestObject('Page_Quick_Intro/textarea_pThis is an intro message for Main_cb300b'), 0)
+WebUI.waitForElementVisible(findTestObject('Page_Introduction_Request_Form/Request_intro_message_form_introduction_message_textarea'), 
+    0)
 
-WebUI.setText(findTestObject('Page_Quick_Intro/textarea_pThis is an intro message for Main_cb300b'), 'This is an intro message for Main Contact')
+WebUI.setText(findTestObject('Page_Introduction_Request_Form/Request_intro_message_form_introduction_message_textarea'), 
+    'A new message')
 
-WebUI.click(findTestObject('Page_Quick_Intro/span_Confirm_mdl-button__ripple-container'))
+WebUI.click(findTestObject('Page_Quick_Intro/Request_intro_message_form_confirm_button'))
 
 WebUI.switchToWindowIndex('0')
 
-WebUI.click(findTestObject('Page_Quick_Intro/div__asa'))
+WebUI.click(findTestObject('Page_Gmail_Inbox/Delete_message_button'))
 
-WebUI.click(findTestObject('Object Repository/Page_Recibidos (2) - introduced.omrgmail.co_9945ab/img_Enviar comentarios a Google_gb_Da gbii'))
+WebUI.click(findTestObject('Page_Gmail_Inbox/Avatar_circle'))
 
-WebUI.click(findTestObject('Object Repository/Page_Recibidos (2) - introduced.omrgmail.co_9945ab/a_Salir'))
+WebUI.verifyElementPresent(findTestObject('Page_Gmail_Inbox/Exit_button'), 5)
 
-WebUI.navigateToUrl('https://app-dev.onmyradar.io/v2/contacts')
+WebUI.click(findTestObject('Page_Gmail_Inbox/Exit_button'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Quick_Intro/div_MCMain Contactintroduced.omrgmail.com'), 0)
+WebUI.navigateToUrl(GlobalVariable.url + 'v2/contacts')
 
-WebUI.click(findTestObject('Page_Quick_Intro/div_MCMain Contactintroduced.omrgmail.com'))
+WebUI.waitForElementVisible(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row'), 20)
 
-WebUI.waitForElementVisible(findTestObject('Page_Quick_Intro/div_Main Contact'), 0)
+WebUI.click(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row'))
+
+WebUI.waitForElementPresent(findTestObject('Page_Quick_Intro/div_Main Contact'), 0)
 
 WebUI.click(findTestObject('Page_Quick_Intro/div_Main Contact'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Quick_Intro/svg_Main Contact_feather feather-edit conta_0154f3'), 0)
+WebUI.mouseOver(findTestObject('Page_Contacts_Dashboard/Contact_Name'))
 
-WebUI.click(findTestObject('Page_Quick_Intro/svg_Main Contact_feather feather-edit conta_0154f3'))
+WebUI.click(findTestObject('Page_Contacts_Dashboard/Edit_Contact_Button'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Quick_Intro/input_BIO REQUEST_first_name'), 0)
+WebUI.waitForElementVisible(findTestObject('Page_Introduction_Request_Form/Request_intro_message_form_first_name_input'), 
+    0)
 
-WebUI.setText(findTestObject('Page_Quick_Intro/input_BIO REQUEST_first_name'), 'Introduced')
+WebUI.setText(findTestObject('Page_Introduction_Request_Form/Request_intro_message_form_first_name_input'), 'Introduced')
 
-WebUI.waitForElementVisible(findTestObject('Page_Quick_Intro/div_This is an intro message for introduced_401b92'), 0)
+WebUI.waitForElementVisible(findTestObject('Page_Contacts_Dashboard/Edit_contact_introduction_message'), 10)
 
-WebUI.setText(findTestObject('Page_Quick_Intro/div_This is an intro message for introduced_401b92'), 'This is an intro message for introduced contact')
+WebUI.setText(findTestObject('Page_Contacts_Dashboard/Edit_contact_introduction_message'), 'A message for introduced contact')
 
-WebUI.waitForElementClickable(findTestObject('Page_Quick_Intro/span_Done_mdl-button__ripple-container'), 0)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'), 5)
 
-WebUI.click(findTestObject('Page_Quick_Intro/span_Done_mdl-button__ripple-container'))
+WebUI.click(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'))
 
 WebUI.verifyElementClickable(findTestObject('Nav_Bar/Profile_Dropdown'))
 
@@ -171,20 +179,9 @@ WebUI.verifyElementClickable(findTestObject('Nav_Bar/Log_Out_Button'))
 
 WebUI.click(findTestObject('Nav_Bar/Log_Out_Button'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 5)
 
 WebUI.closeBrowser()
-
-def clickUsingJS(TestObject to, int timeout) {
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    WebElement element = WebUiCommonHelper.findWebElement(to, timeout)
-
-    JavascriptExecutor executor = ((driver) as JavascriptExecutor)
-
-    executor.executeScript('\n\t\tfunction triggerMouseEvent(targetNode, eventType) {\n        \tvar clickEvent = document.createEvent(\'MouseEvents\');\n        \tclickEvent.initEvent(eventType, true, true);\n        \ttargetNode.dispatchEvent(clickEvent);\n\t\t};\n\t\t\n\t\ttriggerMouseEvent(arguments[0], "mouseover");\n\t\ttriggerMouseEvent(arguments[0], "mousedown");\n\t\ttriggerMouseEvent(arguments[0], "mouseup");\n\t\ttriggerMouseEvent(arguments[0], "click");\n\t', 
-        element)
-}
 
