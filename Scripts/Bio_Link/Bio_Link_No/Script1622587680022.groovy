@@ -27,8 +27,6 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 
 WebUI.openBrowser('')
 
-WebUI.waitForPageLoad(20)
-
 WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
@@ -41,7 +39,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_I
 
 WebUI.click(findTestObject('Object Repository/Page_Auth0_SignIn/button_Log In'))
 
-WebUI.waitForPageLoad(20)
+WebUI.waitForPageLoad(10)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Contacts_Dashboard/Main_Contact_Row'), 10)
 
@@ -55,7 +53,7 @@ String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getConten
 
 WebUI.navigateToUrl(my_clipboard)
 
-WebUI.waitForPageLoad(20)
+WebUI.waitForElementPresent(findTestObject('Page_Bio_Link/button_No'), 10)
 
 WebUI.verifyElementPresent(findTestObject('Page_Bio_Link/button_No'), 10)
 
