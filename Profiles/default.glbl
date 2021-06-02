@@ -59,4 +59,9 @@
       <initValue>'introduced.omr@gmail.com'</initValue>
       <name>main_contact_email</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.contact.request@gmail.com'</initValue>
+      <name>contact_url_request_email</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

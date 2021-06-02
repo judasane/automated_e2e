@@ -67,7 +67,7 @@ WebUI.verifyElementPresent(findTestObject('Page_Bio_Link/form_yes/email_input'),
 
 WebUI.click(findTestObject('Page_Bio_Link/form_yes/email_input'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Bio_Link/form_yes/email_input'), 'random@kanjea.app')
+WebUI.setText(findTestObject('Page_Bio_Link/form_yes/email_input'), GlobalVariable.contact_url_request_email)
 
 WebUI.verifyElementPresent(findTestObject('Page_Bio_Link/form_yes/first_name_input'), 5)
 
@@ -94,6 +94,4 @@ WebUI.click(findTestObject('Page_Bio_Link/form_yes/send_button'), FailureHandlin
 WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Page_Bio_Link/div_success'), 5)
-
-WebUI.closeBrowser()
 
