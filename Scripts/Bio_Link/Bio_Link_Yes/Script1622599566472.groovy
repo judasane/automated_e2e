@@ -27,8 +27,6 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 
 WebUI.openBrowser('')
 
-WebUI.waitForPageLoad(20)
-
 WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
@@ -41,7 +39,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_I
 
 WebUI.click(findTestObject('Object Repository/Page_Auth0_SignIn/button_Log In'))
 
-WebUI.waitForPageLoad(20)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row'), 30)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Contacts_Dashboard/Main_Contact_Row'), 10)
 
@@ -51,11 +49,13 @@ WebUI.verifyElementClickable(findTestObject('Page_Contacts_Dashboard/Generate_Bi
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Generate_Bio_Link_Button'))
 
+WebUI.waitForElementNotPresent(findTestObject('Page_Contacts_Dashboard/Url_Copied_Toast'), 0)
+
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
 WebUI.navigateToUrl(my_clipboard)
 
-WebUI.waitForPageLoad(20)
+WebUI.waitForElementPresent(findTestObject('Page_Bio_Link/button_Yes'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Bio_Link/button_Yes'), 10)
 
