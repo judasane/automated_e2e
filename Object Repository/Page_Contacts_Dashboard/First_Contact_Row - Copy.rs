@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Contacts_Tittle</name>
+   <name>First_Contact_Row - Copy</name>
    <tag></tag>
-   <elementGuidId>eec2b8f9-b4d7-49c1-af2b-6728fbad14a2</elementGuidId>
+   <elementGuidId>fdd2506a-0840-474e-9c03-13b5216dd124</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//h1[@class='mr_20'][.='Contacts']</value>
+         <value>//table[@class=&quot;mdl-data-table mdl-js-data-table table il-table-view_table &quot;]/tbody/tr[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
