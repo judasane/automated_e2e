@@ -39,7 +39,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_I
 
 WebUI.click(findTestObject('Object Repository/Page_Auth0_SignIn/button_Log In'))
 
-WebUI.waitForPageLoad(10)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row'), 30)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Contacts_Dashboard/Main_Contact_Row'), 10)
 
