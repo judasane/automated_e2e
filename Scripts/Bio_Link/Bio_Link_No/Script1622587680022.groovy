@@ -49,6 +49,8 @@ WebUI.verifyElementClickable(findTestObject('Page_Contacts_Dashboard/Generate_Bi
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Generate_Bio_Link_Button'))
 
+WebUI.waitForElementNotPresent(findTestObject('Page_Contacts_Dashboard/Url_Copied_Toast'), 0)
+
 String my_clipboard = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.stringFlavor)
 
 WebUI.navigateToUrl(my_clipboard)
