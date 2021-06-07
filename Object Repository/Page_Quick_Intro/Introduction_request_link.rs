@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Introduction_request_link</name>
+   <tag></tag>
+   <elementGuidId>5fe6bfaf-8449-49d8-bbf0-1f4ad6d157de</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[text()=&quot;Sounds Great!&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>https://app-dev.onmyradar.io/bio/request?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTYyMTUzOTIwNCwiZXhwIjoxNjIxNTY4MDA0fQ.eyJjb250YWN0X2lkIjoiMWI0ODMyOWYtYWE0OS00NzBkLWI2ZTAtZTU1MjE2ZWUyZGU4IiwidXNlcl9pZCI6MjI2fQ.vhFeV6GYNiIYSgbl289kSA17ALGHcsEdIRYPt57lMyqWCkBBUHBIrB6P1NRmXqifw6Wd3hDsL-p4isxcPYZZtA</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>_blank</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-saferedirecturl</name>
+      <type>Main</type>
+      <value>https://www.google.com/url?q=https://app-dev.onmyradar.io/bio/request?token%3DeyJhbGciOiJIUzUxMiIsImlhdCI6MTYyMTUzOTIwNCwiZXhwIjoxNjIxNTY4MDA0fQ.eyJjb250YWN0X2lkIjoiMWI0ODMyOWYtYWE0OS00NzBkLWI2ZTAtZTU1MjE2ZWUyZGU4IiwidXNlcl9pZCI6MjI2fQ.vhFeV6GYNiIYSgbl289kSA17ALGHcsEdIRYPt57lMyqWCkBBUHBIrB6P1NRmXqifw6Wd3hDsL-p4isxcPYZZtA&amp;source=gmail&amp;ust=1621625623235000&amp;usg=AFQjCNFDLt6wHuGusppuEQJhQv8ssaSMzg</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sounds Great!</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;:60&quot;)/a[1]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id=':60']/a</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Sounds Great!')]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='quick_intro has someone to introduce you to!'])[1]/following::a[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='mí'])[1]/following::a[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Responder'])[1]/preceding::a[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reenviar'])[1]/preceding::a[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Sounds Great!']/parent::*</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'https://app-dev.onmyradar.io/bio/request?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTYyMTUzOTIwNCwiZXhwIjoxNjIxNTY4MDA0fQ.eyJjb250YWN0X2lkIjoiMWI0ODMyOWYtYWE0OS00NzBkLWI2ZTAtZTU1MjE2ZWUyZGU4IiwidXNlcl9pZCI6MjI2fQ.vhFeV6GYNiIYSgbl289kSA17ALGHcsEdIRYPt57lMyqWCkBBUHBIrB6P1NRmXqifw6Wd3hDsL-p4isxcPYZZtA')]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[3]/div/a</value>
+   </webElementXpaths>
+</WebElementEntity>

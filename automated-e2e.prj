@@ -6,6 +6,7 @@
    <UUID>87c9761f-cb70-48c2-9efb-92113f59a4ae</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\judas\git\automated-e2e\automated-e2e.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

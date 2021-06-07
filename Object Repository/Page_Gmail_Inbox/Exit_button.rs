@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Contacts_Tittle</name>
+   <name>Exit_button</name>
    <tag></tag>
-   <elementGuidId>eec2b8f9-b4d7-49c1-af2b-6728fbad14a2</elementGuidId>
+   <elementGuidId>df82a53c-d033-4964-a613-ce6c68748ca6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//h1[@class='mr_20'][.='Contacts']</value>
+         <value>//*[@id=&quot;gb_71&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
