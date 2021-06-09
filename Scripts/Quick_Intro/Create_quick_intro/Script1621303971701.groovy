@@ -102,13 +102,13 @@ WebUI.setEncryptedText(findTestObject('Page_Gmail/Gmail_form_password'), GlobalV
 
 WebUI.click(findTestObject('Page_Gmail/Gmail_form_login_button'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Gmail_Inbox/Refresh_button'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Page_Gmail_Inbox/Refresh_button'), 0)
 
-WebUI.click(findTestObject('Page_Gmail_Inbox/Refresh_button'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/Refresh_button'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_Quick_Intro/Quick_intro_message_request_email'), 5)
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Page_Gmail_Inbox/gmail_inbox_first_email'), 5)
 
-WebUI.click(findTestObject('Page_Quick_Intro/Quick_intro_message_request_email'))
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/gmail_inbox_first_email'))
 
 WebUI.verifyElementPresent(findTestObject('Page_Quick_Intro/Introduction_request_link'), 5)
 
@@ -136,13 +136,13 @@ WebUI.click(findTestObject('Page_Quick_Intro/Request_intro_message_form_confirm_
 
 WebUI.switchToWindowIndex('0')
 
-WebUI.click(findTestObject('Page_Gmail_Inbox/Delete_message_button'))
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/Delete_message_button'))
 
-WebUI.click(findTestObject('Page_Gmail_Inbox/Avatar_circle'))
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/Avatar_circle'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Gmail_Inbox/Exit_button'), 5)
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Page_Gmail_Inbox/Exit_button'), 5)
 
-WebUI.click(findTestObject('Page_Gmail_Inbox/Exit_button'))
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/Exit_button'))
 
 WebUI.navigateToUrl(GlobalVariable.url + 'v2/contacts')
 

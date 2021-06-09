@@ -33,17 +33,17 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
 
-WebUI.setText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), GlobalVariable.email_quick_intro)
+WebUI.setText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), GlobalVariable.email_user_bio_link)
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Password'), GlobalVariable.encryptedPassword)
 
 WebUI.click(findTestObject('Object Repository/Page_Auth0_SignIn/button_Log In'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row'), 30)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row_Bio_Request'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Contacts_Dashboard/Main_Contact_Row'), 10)
+WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row_Bio_Request'), 10)
 
-WebUI.mouseOver(findTestObject('Object Repository/Page_Contacts_Dashboard/Main_Contact_Row'))
+WebUI.mouseOver(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row_Bio_Request'))
 
 WebUI.verifyElementClickable(findTestObject('Page_Contacts_Dashboard/Generate_Bio_Link_Button'))
 
@@ -94,4 +94,42 @@ WebUI.click(findTestObject('Page_Bio_Link/form_yes/send_button'), FailureHandlin
 WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Page_Bio_Link/div_success'), 5)
+
+WebUI.navigateToUrl(GlobalVariable.gmail_url)
+
+WebUI.waitForPageLoad(20)
+
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Gmail_form_email_address'), 5)
+
+WebUI.setText(findTestObject('Page_Gmail/Gmail_form_email_address'), GlobalVariable.contact_url_request_email)
+
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Gmail_form_next_button'), 5)
+
+WebUI.click(findTestObject('Page_Gmail/Gmail_form_next_button'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Gmail_form_password'), 5)
+
+WebUI.setEncryptedText(findTestObject('Page_Gmail/Gmail_form_password'), GlobalVariable.encryptedPassword)
+
+WebUI.click(findTestObject('Page_Gmail/Gmail_form_login_button'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Page_Gmail_Inbox/Refresh_button'), 0)
+
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/Refresh_button'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Page_Gmail_Inbox/gmail_inbox_first_email'), 5)
+
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/gmail_inbox_first_email'))
+
+WebUI.waitForElementPresent(findTestObject('Page_Gmail/Page_Gmail_Message/Bio_Request_Intro_Subject'), 5)
+
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/Delete_message_button'))
+
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/Avatar_circle'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Page_Gmail_Inbox/Exit_button'), 5)
+
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/Exit_button'))
+
+WebUI.closeBrowser()
 

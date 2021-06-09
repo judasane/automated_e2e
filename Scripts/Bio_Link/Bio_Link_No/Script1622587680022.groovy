@@ -33,17 +33,17 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
 
-WebUI.setText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), GlobalVariable.email_quick_intro)
+WebUI.setText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Email'), GlobalVariable.email_user_bio_link)
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Auth0_SignIn/Log_In_Password'), GlobalVariable.encryptedPassword)
 
 WebUI.click(findTestObject('Object Repository/Page_Auth0_SignIn/button_Log In'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row'), 30)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row_Bio_Request'), 10)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Contacts_Dashboard/Main_Contact_Row'), 10)
+WebUI.verifyElementPresent(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row_Bio_Request'), 10)
 
-WebUI.mouseOver(findTestObject('Object Repository/Page_Contacts_Dashboard/Main_Contact_Row'))
+WebUI.mouseOver(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row_Bio_Request'))
 
 WebUI.verifyElementClickable(findTestObject('Page_Contacts_Dashboard/Generate_Bio_Link_Button'))
 

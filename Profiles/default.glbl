@@ -59,7 +59,7 @@
       <initValue>'https://notifications-api-development.herokuapp.com/'</initValue>
       <name>notifications_api_url</name>
    </GlobalVariableEntity>
-  <GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description></description>
       <initValue>'introduced.omr@gmail.com'</initValue>
       <name>main_contact_email</name>
@@ -73,5 +73,25 @@
       <description></description>
       <initValue>'https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;service=mail&amp;sacu=1&amp;rip=1&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin'</initValue>
       <name>gmail_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.contact.request@gmail.com'</initValue>
+      <name>contact_url_request_email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.user.bio.link@gmail.com'</initValue>
+      <name>email_user_bio_link</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'e2e.test.introduced.request@gmail.com'</initValue>
+      <name>main_contact_bio_request</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Virtual Handshake: Introduced Bio &lt;> Test Name'</initValue>
+      <name>bio_request_intro_subject</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
