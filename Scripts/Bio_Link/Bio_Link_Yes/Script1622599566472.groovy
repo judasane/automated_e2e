@@ -91,8 +91,6 @@ WebUI.verifyElementPresent(findTestObject('Page_Bio_Link/form_yes/send_button'),
 
 WebUI.click(findTestObject('Page_Bio_Link/form_yes/send_button'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
-
 WebUI.verifyElementPresent(findTestObject('Page_Bio_Link/div_success'), 5)
 
 WebUI.navigateToUrl(GlobalVariable.gmail_url)
