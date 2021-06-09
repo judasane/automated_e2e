@@ -59,7 +59,7 @@
       <initValue>'https://notifications-api-development.herokuapp.com/'</initValue>
       <name>notifications_api_url</name>
    </GlobalVariableEntity>
-   <GlobalVariableEntity>
+  <GlobalVariableEntity>
       <description></description>
       <initValue>'introduced.omr@gmail.com'</initValue>
       <name>main_contact_email</name>

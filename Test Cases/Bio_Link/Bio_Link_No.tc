@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Bio_Link_No</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>079031fd-81e4-4ea5-9a13-3ff67e51f4b2</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5ddab7b3-4dda-490c-93c8-92114489c741</id>
+      <masked>false</masked>
+      <name>bioLink</name>
+   </variable>
+</TestCaseEntity>
