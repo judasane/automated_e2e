@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Quick_intro_message_request_email</name>
+   <name>button_Yes</name>
    <tag></tag>
-   <elementGuidId>bbc51ffb-2c20-46e5-b44c-4e706deba7c3</elementGuidId>
+   <elementGuidId>1335b73f-c4bd-4767-af1a-ec3836932373</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>h1</value>
+         <value>button.mdl-button.mdl-js-button.mdl-js-ripple-effect.button.button-xs.button-inverted-outline</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[contains(concat(' ', @class, ' '), 'zA')][1]</value>
+         <value>//button[@class=&quot;mdl-button mdl-js-button mdl-js-ripple-effect button  button-m button-action&quot;][.=&quot;Yes&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,62 +21,69 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>h1</value>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mdl-button mdl-js-button mdl-js-ripple-effect button  button-xs button-inverted-outline</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>quick_intro has someone to introduce you to!</value>
+      <value>Got It</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;:60&quot;)/h1[1]</value>
+      <value>/html[@class=&quot;mdl-js&quot;]/body[1]/div[@class=&quot;ui right center popup transition visible helper-popup helper-popup_pink&quot;]/div[@class=&quot;p_20&quot;]/div[@class=&quot;helper-popup_buttons&quot;]/button[@class=&quot;mdl-button mdl-js-button mdl-js-ripple-effect button  button-xs button-inverted-outline&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id=':60']/h1</value>
+      <value>(//button[@type='button'])[9]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='mí'])[1]/following::h1[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('Don', &quot;'&quot;, 't show this again')])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sounds Great!'])[1]/preceding::h1[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search and add as many contacts you need for your intro.'])[1]/following::button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Responder'])[1]/preceding::h1[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='quick_intro has someone to introduce you to!']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='Got It']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//h1</value>
+      <value>//div[3]/button[2]</value>
    </webElementXpaths>
 </WebElementEntity>

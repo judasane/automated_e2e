@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Refresh_button</name>
+   <name>Bio_Request_Intro_Subject</name>
    <tag></tag>
-   <elementGuidId>e88cb789-b1cd-417c-ba23-fd7e13f44932</elementGuidId>
+   <elementGuidId>b87d65d7-76b1-4434-9803-df58676220e4</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//h2[text()='${GlobalVariable.bio_request_intro_subject}&quot;]</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;:4&quot;]/div/div[1]/div[1]/div/div/div[5]/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

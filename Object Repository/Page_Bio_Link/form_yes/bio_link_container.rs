@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Generate_Bio_Link_Button</name>
+   <name>bio_link_container</name>
    <tag></tag>
-   <elementGuidId>dbfafcb5-4462-4b50-bf50-b5096b0c73be</elementGuidId>
+   <elementGuidId>fb3bccf8-4a08-4ca9-aaeb-8ae471608079</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[text() = '${GlobalVariable.main_contact_bio_request}']/parent::*/parent::*/parent::*/*[@class='contacts-list_start-intro']/button[text() = 'Generate Bio Link']</value>
+         <value>//div[@class=&quot;container container_settings px_0&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

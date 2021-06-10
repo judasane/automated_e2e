@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Bio_Link_Yes</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>11f37409-92a9-488b-9f61-f092729604e4</testCaseGuid>
+   <variable>
+      <defaultValue>'e2e.test.introduced.request@gmail.com'</defaultValue>
+      <description></description>
+      <id>06125333-4700-444c-a21d-dd8729a3f853</id>
+      <masked>false</masked>
+      <name>main_contact</name>
+   </variable>
+</TestCaseEntity>
