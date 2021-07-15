@@ -27,6 +27,10 @@ import java.awt.datatransfer.DataFlavor as DataFlavor
 
 WebUI.openBrowser('')
 
+WebUI.navigateToUrl(GlobalVariable.notifications_api_url)
+
+WebUI.waitForPageLoad(20)
+
 WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)

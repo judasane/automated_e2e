@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='container container_settings px_0']/button</value>
+         <value>//button[.='Copy']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
