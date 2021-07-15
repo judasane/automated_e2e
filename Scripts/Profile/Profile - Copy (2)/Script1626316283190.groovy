@@ -135,45 +135,19 @@ WebUI.mouseOver(findTestObject('Page_introduction_requests/first_introduction_re
 
 WebUI.verifyElementVisible(findTestObject('Page_introduction_requests/start_intro_button'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_introduction_requests/start_intro_button'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Page_introduction_requests/start_quick_intro_button'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Search_Input'), 5)
+WebUI.verifyElementClickable(findTestObject('Nav_Bar/Profile_Dropdown'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Search_Input'), 5)
+WebUI.click(findTestObject('Nav_Bar/Profile_Dropdown'))
 
-WebUI.setText(findTestObject('Page_Create_Intro/Search_Input'), 'exam')
+WebUI.verifyElementClickable(findTestObject('Nav_Bar/Log_Out_Button'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), 2)
+WebUI.click(findTestObject('Nav_Bar/Log_Out_Button'))
 
-WebUI.mouseOver(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
 
-WebUI.verifyElementVisible(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 10)
 
-WebUI.click(findTestObject('Page_Create_Intro/Intro2_User_Add_Button'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Subject_Input'), 5)
-
-WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro_Subject_Input'), 5)
-
-WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Content'), 5)
-
-WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro_Content'), 5)
-
-WebUI.click(findTestObject('Page_Create_Intro/Send_Introduction_Button'))
-
-WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Sent_Span'), 2)
-
-WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro_Sent_Span'), 2)
-
-WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Intro_Sent_Message'), 5)
-
-WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Intro_Sent_Message'), 5)
-
-WebUI.waitForElementPresent(findTestObject('Page_Create_Intro/Read_Only_Subject'), 5)
-
-WebUI.verifyElementPresent(findTestObject('Page_Create_Intro/Read_Only_Subject'), 5)
-
-WebUI.verifyElementText(findTestObject('Page_Create_Intro/Read_Only_Subject'), subject)
-
-WebUI.verifyElementText(findTestObject('Page_Create_Intro/Read_Only_Content'), final_content)
+WebUI.closeBrowser()
 
