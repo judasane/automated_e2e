@@ -94,4 +94,9 @@
       <initValue>'Virtual Handshake: Introduced Bio &lt;> Test Name'</initValue>
       <name>bio_request_intro_subject</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Hi {introduced_first_name},&lt;br>Please meet {recipient_first_name}.&lt;br>{recipient_introduction_message}&lt;br>Hi {recipient_first_name},&lt;br>Please meet {introduced_first_name}.&lt;br>{introduced_introduction_message}&lt;br>I hope this introduction is fruitful!&lt;br>Happy connecting!&lt;br>{user_display_name}'</initValue>
+      <name>intro_template</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

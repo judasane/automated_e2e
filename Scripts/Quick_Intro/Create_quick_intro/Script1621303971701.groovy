@@ -84,6 +84,10 @@ WebUI.click(findTestObject('Page_Quick_Intro/button_Yes, Request Introduction me
 
 WebUI.waitForElementPresent(findTestObject('Page_Quick_Intro/Modal_introduced_contact_introduction_message_sent'), 5)
 
+WebUI.waitForElementClickable(findTestObject('Page_Quick_Intro/button_close_request_bio_modal'), 2)
+
+WebUI.click(findTestObject('Page_Quick_Intro/button_close_request_bio_modal'))
+
 WebUI.navigateToUrl(GlobalVariable.gmail_url)
 
 WebUI.waitForPageLoad(20)
@@ -102,17 +106,17 @@ WebUI.setEncryptedText(findTestObject('Page_Gmail/Gmail_form_password'), GlobalV
 
 WebUI.click(findTestObject('Page_Gmail/Gmail_form_login_button'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Gmail/Page_Gmail_Inbox/Refresh_button'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Gmail/Page_Gmail_Inbox/Refresh_button'), 10)
 
 WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/Refresh_button'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Page_Gmail/Page_Gmail_Inbox/gmail_inbox_first_email'), 5)
 
-WebUI.click(findTestObject('Page_Gmail/Page_Gmail_Inbox/gmail_inbox_first_email'))
+clickUsingJS(findTestObject('Page_Gmail/Page_Gmail_Inbox/gmail_inbox_first_email'), 30)
 
 WebUI.verifyElementPresent(findTestObject('Page_Quick_Intro/Introduction_request_link'), 5)
 
-WebUI.click(findTestObject('Page_Quick_Intro/Introduction_request_link'))
+clickUsingJS(findTestObject('Page_Quick_Intro/Introduction_request_link'), 30)
 
 WebUI.switchToWindowIndex('1')
 
@@ -150,36 +154,45 @@ WebUI.waitForElementVisible(findTestObject('Page_Contacts_Dashboard/Main_Contact
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Main_Contact_Row'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Name'), 0)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Contact_Name'), 3)
 
 WebUI.mouseOver(findTestObject('Page_Contacts_Dashboard/Contact_Name'))
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Edit_Contact_Button'))
 
 WebUI.waitForElementVisible(findTestObject('Page_Introduction_Request_Form/Request_intro_message_form_first_name_input'), 
-    0)
+    3)
 
 WebUI.setText(findTestObject('Page_Introduction_Request_Form/Request_intro_message_form_first_name_input'), 'Introduced')
 
-WebUI.waitForElementVisible(findTestObject('Page_Contacts_Dashboard/Edit_contact_introduction_message'), 10)
+WebUI.waitForElementVisible(findTestObject('Page_Contacts_Dashboard/Edit_contact_introduction_message'), 3)
 
 WebUI.setText(findTestObject('Page_Contacts_Dashboard/Edit_contact_introduction_message'), 'A message for introduced contact')
 
-WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'), 1)
+WebUI.waitForElementPresent(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'), 3)
 
 WebUI.click(findTestObject('Page_Contacts_Dashboard/Create_Contact_Done_Button'))
 
-WebUI.verifyElementVisible(findTestObject('Nav_Bar/Profile_Dropdown'), FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('Nav_Bar/Profile_Dropdown'), 3)
 
-WebUI.click(findTestObject('Nav_Bar/Profile_Dropdown'))
+clickUsingJS(findTestObject('Nav_Bar/Profile_Dropdown'), 30)
 
-WebUI.verifyElementVisible(findTestObject('Nav_Bar/Log_Out_Button'), FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('Nav_Bar/Log_Out_Button'), 2)
 
-WebUI.click(findTestObject('Nav_Bar/Log_Out_Button'))
+clickUsingJS(findTestObject('Nav_Bar/Log_Out_Button'), 30)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 1)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 1)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Auth0_SignIn/OMR_Logo'), 3)
 
 WebUI.closeBrowser()
+
+def clickUsingJS(TestObject to, int timeout) {
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    WebElement element = WebUiCommonHelper.findWebElement(to, timeout)
+
+    JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+
+    executor.executeScript('\n\t\tfunction triggerMouseEvent(targetNode, eventType) {\n        \tvar clickEvent = document.createEvent(\'MouseEvents\');\n        \tclickEvent.initEvent(eventType, true, true);\n        \ttargetNode.dispatchEvent(clickEvent);\n\t\t};\n\t\t\n\t\ttriggerMouseEvent(arguments[0], "mouseover");\n\t\ttriggerMouseEvent(arguments[0], "mousedown");\n\t\ttriggerMouseEvent(arguments[0], "mouseup");\n\t\ttriggerMouseEvent(arguments[0], "click");\n\t', 
+        element)
+}
 

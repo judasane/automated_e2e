@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app-root']/div[2]/div[2]/div/section/button/span</value>
+         <value>//button[@alt='close icon']</value>
       </entry>
       <entry>
          <key>CSS</key>

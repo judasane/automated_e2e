@@ -6,11 +6,11 @@
    <elementGuidId>b9f7b73d-81ba-43fb-a77b-3a925ae930c4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;navbar-profile-button&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;demo-menu-lower-right&quot;]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

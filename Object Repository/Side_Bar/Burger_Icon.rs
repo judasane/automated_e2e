@@ -6,16 +6,16 @@
    <elementGuidId>3e816453-29ff-44a5-b924-ace165d635fd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>i.material-icons</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[(text() = '' or . = '')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='mdl-layout__drawer-button']/i</value>
+         <value>//*[@data-test-id=&quot;navbar-menu-button&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.material-icons</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

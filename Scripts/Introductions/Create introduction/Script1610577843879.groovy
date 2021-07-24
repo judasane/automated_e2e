@@ -21,11 +21,29 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 
+
+def format_old_content (String original_string, String introduced_first_name, String recipient_first_name, String connector_name, String recipient_introduction_message, String introduced_introduction_message) {
+	String formatted_string = original_string.replace('{introduced_first_name}', introduced_first_name)
+	formatted_string = formatted_string.replace('{recipient_first_name}', recipient_first_name)
+	formatted_string = formatted_string.replace('{user_display_name}', connector_name)
+	formatted_string = formatted_string.replace('{recipient_introduction_message}', recipient_introduction_message)
+	formatted_string = formatted_string.replace('{introduced_introduction_message}', introduced_introduction_message)
+	formatted_string = formatted_string.replace('<br>', '\n')
+	return formatted_string
+}
+
 String subject = 'New Subject'
 
 String content = 'New Intro '
 
-String old_content = 'Hi 0. Test and 0. Test\n0. Test, please meet 0. Test.\nSome intro\n0. Test, please meet 0. Test.\nSome user\nI hope this introduction is fruitful!\nHappy connecting!\ne2e.test.create.introduction'
+String intro_template= GlobalVariable.intro_template
+String connector_name = 'e2e.test.create.introduction'
+String recipient_first_name = '0. Test'
+String introduced_first_name = '0. Test'
+String recipient_introduction_message = 'Some intro'
+String introduced_introduction_message = 'Some user'
+String old_content = format_old_content(intro_template, introduced_first_name, recipient_first_name, connector_name, recipient_introduction_message, introduced_introduction_message)
+
 
 String final_content = content + old_content
 
@@ -123,4 +141,6 @@ def clickUsingJS(TestObject to, int timeout) {
     executor.executeScript('\n\t\tfunction triggerMouseEvent(targetNode, eventType) {\n        \tvar clickEvent = document.createEvent(\'MouseEvents\');\n        \tclickEvent.initEvent(eventType, true, true);\n        \ttargetNode.dispatchEvent(clickEvent);\n\t\t};\n\t\t\n\t\ttriggerMouseEvent(arguments[0], "mouseover");\n\t\ttriggerMouseEvent(arguments[0], "mousedown");\n\t\ttriggerMouseEvent(arguments[0], "mouseup");\n\t\ttriggerMouseEvent(arguments[0], "click");\n\t', 
         element)
 }
+
+
 

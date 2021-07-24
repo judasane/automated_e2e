@@ -4,7 +4,7 @@
    <name>Development</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
- <GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description></description>
       <initValue>'https://app-dev.onmyradar.io/'</initValue>
       <name>url</name>
@@ -93,5 +93,15 @@
       <description></description>
       <initValue>'Virtual Handshake: Introduced Bio &lt;> Test Name'</initValue>
       <name>bio_request_intro_subject</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'{&quot;ASK_INTRODUCED&quot;:{&quot;subject&quot;:&quot;Interested in meeting {recipient_first_name}? [Response Needed]&quot;,&quot;body&quot;:&quot;Hi {introduced_first_name},&lt;br> Are you interested in meeting {recipient_first_name}?&lt;br>{recipient_introduction_message}&lt;br>Regards&lt;br> {user_display_name}&quot;},&quot;ASK_RECIPIENT&quot;:{&quot;subject&quot;:&quot;Interested in meeting {introduced_first_name}? [Response Needed]&quot;,&quot;body&quot;:&quot;Hi {recipient_first_name},&lt;br> Are you interested in meeting {introduced_first_name}?&lt;br>{introduced_introduction_message}&lt;br>Regards&lt;br>{user_display_name}&quot;},&quot;introduction&quot;:{&quot;subject&quot;:&quot;Virtual Handshake: {introduced_first_name} &lt;> {recipient_first_name} &quot;,&quot;body&quot;:&quot;Hi {introduced_first_name},&lt;br>Please meet {recipient_first_name}.&lt;br>{recipient_introduction_message}&lt;br>Hi {recipient_first_name},&lt;br>Please meet {introduced_first_name}.&lt;br>{introduced_introduction_message}&lt;br>I hope this introduction is fruitful!&lt;br>Happy connecting!&lt;br>{user_display_name}&quot;},&quot;quick_introduction&quot;:{&quot;subject&quot;:&quot;Virtual Handshake: {introduced_first_name} x {recipient_first_name} &quot;,&quot;body&quot;:&quot;Hi {introduced_first_name} and {recipient_first_name}&quot;}}'</initValue>
+      <name>default_email_texts</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Hi {introduced_first_name},&lt;br>Please meet {recipient_first_name}.&lt;br>{recipient_introduction_message}&lt;br>Hi {recipient_first_name},&lt;br>Please meet {introduced_first_name}.&lt;br>{introduced_introduction_message}&lt;br>I hope this introduction is fruitful!&lt;br>Happy connecting!&lt;br>{user_display_name}'</initValue>
+      <name>intro_template</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

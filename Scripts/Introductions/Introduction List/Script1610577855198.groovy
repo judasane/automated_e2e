@@ -37,9 +37,9 @@ WebUI.click(findTestObject('Object Repository/Page_Auth0_SignIn/button_Log In'))
 
 WebUI.waitForElementPresent(findTestObject('Nav_Bar/Nav_Bar'), 10)
 
-WebUI.waitForElementPresent(findTestObject('Nav_Bar/Introductions_Nav_Bar'), 10)
+WebUI.waitForElementPresent(findTestObject('Side_Bar/Burger_Icon'), 10)
 
-WebUI.click(findTestObject('Nav_Bar/Introductions_Nav_Bar'))
+clickUsingJS(findTestObject('Side_Bar/Burger_Icon'), 10)
 
 WebUI.waitForElementPresent(findTestObject('Page_Introduction_List/Introduction_Search_Bar'), 10)
 

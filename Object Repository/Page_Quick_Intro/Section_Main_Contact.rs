@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//section[@class='quick-intro_sections p_14'][1]</value>
+         <value>//section[contains(concat(&quot; &quot;, normalize-space(@class), &quot; &quot;), &quot; quick-intro_sections &quot;)][1]</value>
       </entry>
       <entry>
          <key>CSS</key>

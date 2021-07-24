@@ -6,12 +6,12 @@
    <elementGuidId>a6a356d2-c4b4-4dd2-acc4-1f31c1986633</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.ReactModal__Content.ReactModal__Content--after-open > button.mdl-button.mdl-js-button.mdl-js-ripple-effect.button.button-accent</value>
+         <key>XPATH</key>
+         <value>//button[.='Yes, request bio']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[8]</value>
+         <key>CSS</key>
+         <value>div.ReactModal__Content.ReactModal__Content--after-open > button.mdl-button.mdl-js-button.mdl-js-ripple-effect.button.button-accent</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

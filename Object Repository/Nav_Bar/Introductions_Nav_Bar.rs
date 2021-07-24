@@ -6,12 +6,12 @@
    <elementGuidId>96582319-7ba9-49a9-aad9-e5bc7dd05e6b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//nav[@class=&quot;mdl-navigation&quot;]/a[3]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//nav[@class=&quot;mdl-navigation&quot;]/a[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
